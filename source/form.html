@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <div class="main-header__logo">
+      <a class="main-header__logo-icon" href="/">
+        <img src="../images/index-images/index-svg/logo-mobile.svg" width="33.32" height="37.61">
+      </a>
+      <a class="main-header__logo-text" href="/">
+        <img src="../images/index-images/index-svg/logo-text.svg" width="101" height="18">
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span> </button>
+        <ul class="main-nav__list nav-list">
+          <li class="nav-list__item nav-list__item--activ"><a href="#">Главная</a></li>
+          <li class="nav-list__item"><a href="#">Каталог продкуции</a>
+          </li>
+          <li class="nav-list__item"><a href="#">Подбор программы</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <section class="filter-programs">
+      <h2 class="filter-programs__title">Подбор программы</h2>
+      <p class="filter-programs__description">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
+      <fieldset class="filter-programs__group-cat-programs">
+        <form class="filter-programs__form-data-cat" action="https://echo.htmlacademy.ru" method="get">
+
+          <label for="name-cat" class="filter-programs__input-placeholder">Имя</label>
+          <input type="text" class="filter-programs__input input-data-cat" id="name-cat" placeholder="Барсик" required>
+
+          <label for="weight-cat" class="filter-programs__input-placeholder">Вес(кг)</label>
+          <input type="text" class="filter-programs__input input-data-cat" id="weight-cat" placeholder="7" required>
+
+          <label for="age-cat" class="filter-programs__input-placeholder">Возраст(лет)</label>
+          <input type="text" class="filter-programs__input input-data-cat" id="age-cat" placeholder="7">
+
+        </form>
+
+        <form class="filter-programs__form-data-programs" action="https://echo.htmlacademy.ru" method="get">
+
+          <label for="fit" class="filter-programs__input-placeholder">Похудение</label>
+          <input class="filter-programs__input input-programs-cat" type="radio" name="fit" id="fit" value="fit" checked>
+
+          <label for="fat" class="filter-programs__input-placeholder">Набор массы</label>
+          <input class="filter-programs__input input-programs-cat" type="radio" name="fat" id="fat" value="fat">
+
+          <label for="help" class="filter-programs__input-placeholder">Не знаю (нужен ваш совет)</label>
+          <input class="filter-programs__input input-programs-cat" type="radio" name="help" id="help" value="help">
+
+        </form>
+      </fieldset>
+
+      <fieldset class="filter-programs__groiup-data-usercat">
+        <h3 class="filter-programs__title">Контактные данные
+          (владельца кота)</h3>
+        <form class="filter-programs__form-usercat" action="https://echo.htmlacademy.ru" method="get">
+
+          <label class="filter-programs__input-placeholder" for="email">E-mail</label>
+          <input class="filter-programs__input input-data-usercat" type="email" name="email" id="email"
+            placeholder="kuklachev@gmail.com" required>
+
+          <label class="filter-programs__input-placeholder" for="telefon">Телефон</label>
+          <input class="filter-programs__input input-data-usercat" type="tel" name="telefon" id="telefon"
+            pattern="8 (960) 900-60-90" placeholder="8 (960) 900-60-90" required>
+
+        </form>
+
+        <h3 class="filter-programs__title">Комментарий</h3>
+        <form class="filter-programs__form-comment" action="https://echo.htmlacademy.ru" method="get">
+          <textarea class="filter-programs__user-comment" name="comment" id="comment" cols="30" rows="10"></textarea>
+        </form>
+
+        <h3 class="filter-programs__title">Дополнительно</h3>
+        <form class="filter-programs__form-yet" action="https://echo.htmlacademy.ru" method="get">
+          <label class="filter-programs__input-placeholder" for="sugarless">Сахарозаменитель</label>
+          <input class="filter-programs__input input-yet" type="checkbox" id="sugarless" name="sugarless"
+            value="sugarless" checked>
+
+          <label class="filter-programs__input-placeholder" for="aqua">Питьевая вода</label>
+          <input class="filter-programs__input input-yet" type="checkbox" id="aqua" name="aqua" value="aqua">
+
+          <label class="filter-programs__input-placeholder" for="milk">Молоко</label>
+          <input class="filter-programs__input input-yet" type="checkbox" id="milk" name="milk" value="sugarless">
+
+          <label class="filter-programs__input-placeholder" for="vitamins">Витамины</label>
+          <input class="filter-programs__input input-yet" type="checkbox" id="vitamins" name="vitamins"
+            value="vitamins">
+        </form>
+
+      </fieldset>
+
+    </section>
+
+    <section class="contacts">
+      <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
+      <address class="contacts__address">
+        <p class="contacts__info">ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург</p>
+      </address>
+      <img class="contacts__map-location-image" src="/images/index-images/map.jpg" width="320" height="362"
+        alt="Карта расположения офиса продаж" usemap="#navigation">
+      <map contacts__map-location name="navigation" id="navigation">
+        <area shape="" coords="" href="" alt="ул. Большая
+            Конюшенная, д. 19/8
+            Санкт-Петербург">
+      </map>
+    </section>
+  </main>
+
+
+  <footer class="main-footer">
+    <a class="main-footer__logo-text " href="/">
+      <img src="../images/index-images/index-svg/logo-text.svg" width="101" height="18">
+    </a>
+    <ul class="main-footer__list">
+      <li class="main-footer__item main-footer__item--vk">
+        <a class="main-footer__social-link" href="#">
+          <img class="main-footer__social-link-icon" src="/images/index-images/index-svg/vkontakte.svg" alt="">
+        </a>
+      </li>
+      <li class="main-footer__item main-footer__item--youtube">
+        <a class="main-footer__social-link" href="#">
+          <img class="main-footer__social-link-icon" src="/images/index-images/index-svg/youtube.svg" alt="">
+        </a>
+      </li>
+      <li class="main-footer__item main-footer__item--telegram">
+        <a class="main-footer__social-link" href="#">
+          <img class="main-footer__social-link-icon" src="/images/index-images/index-svg/telegram.svg" alt="">
+        </a>
+      </li>
+    </ul>
+    <a href="" class="main-footer__logo-html-academy">
+      <p class="main-footer__logo-html-academy-text">HTML Academy</p>
+      <img src="/images/index-images/index-svg/logo-html-academy.svg" width="27" height="34" alt="Логотип html-academy"
+        .>
+    </a>
+  </footer>
+
+
+
+</body>
+
+</html>

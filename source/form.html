@@ -21,8 +21,8 @@
       <div class="main-nav__wrapper">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span> </button>
         <ul class="main-nav__list nav-list">
-          <li class="nav-list__item nav-list__item--activ"><a href="#">Главная</a></li>
-          <li class="nav-list__item"><a href="#">Каталог продкуции</a>
+          <li class="nav-list__item nav-list__item--activ"><a href="index.html">Главная</a></li>
+          <li class="nav-list__item"><a href="catalog.html">Каталог продкуции</a>
           </li>
           <li class="nav-list__item"><a href="#">Подбор программы</a></li>
         </ul>
@@ -32,7 +32,7 @@
 
   <main class="main-container">
     <form class="filter-programs" action="https://echo.htmlacademy.ru" method="get">
-      <h2 class="filter-programs__title-form-programs">Подбор программы</h2>
+      <h2 class="filter-programs__title">Подбор программы</h2>
       <p class="filter-programs__description">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
 
@@ -40,38 +40,36 @@
         <legend class="filter-programs__title-group" visually-hidden>Данные кота</legend>
 
         <label for="name-cat" class="filter-programs__input-placeholder">Имя</label>
-        <input type="text" class="filter-programs__input input-data-cat" id="name-cat" name="name-cat"
-          placeholder="Барсик" required>
+        <input type="text" class="filter-programs__input" id="name-cat" name="name-cat" placeholder="Барсик" required>
 
         <label for="weight-cat" class="filter-programs__input-placeholder">Вес(кг)</label>
-        <input type="text" class="filter-programs__input input-data-cat" name="weight-cat" id="weight-cat"
-          placeholder="7" required>
+        <input type="text" class="filter-programs__input" name="weight-cat" id="weight-cat" placeholder="7" required>
 
         <label for="age-cat" class="filter-programs__input-placeholder">Возраст(лет)</label>
-        <input type="text" class="filter-programs__input input-data-cat" id="age-cat" name="age-cat" placeholder="7">
+        <input type="text" class="filter-programs__input" id="age-cat" name="age-cat" placeholder="7">
       </fieldset>
 
       <fieldset class="filter-programs__group-data-programs-cat">
         <legend class="filter-programs__title-group visually-hidden">Выбор программы питания</legend>
         <label for="fit" class="filter-programs__input-placeholder">Похудение</label>
-        <input class="filter-programs__input input-programs-cat" type="radio" name="fit" id="fit" checked>
+        <input class="filter-programs__input" type="radio" name="fit" id="fit" checked>
 
         <label for="fat" class="filter-programs__input-placeholder">Набор массы</label>
-        <input class="filter-programs__input input-programs-cat" type="radio" name="fat" id="fat">
+        <input class="filter-programs__input" type="radio" name="fat" id="fat">
 
         <label for="help" class="filter-programs__input-placeholder">Не знаю (нужен ваш совет)</label>
-        <input class="filter-programs__input input-programs-cat" type="radio" name="help" id="help" value="help">
+        <input class="filter-programs__input" type="radio" name="help" id="help" value="help">
       </fieldset>
 
       <fieldset class="filter-programs__group-data-usercat">
         <legend class="filter-programs__title-group">Контактные данные (владельца кота)</legend>
         <label class="filter-programs__input-placeholder" for="email">E-mail</label>
-        <input class="filter-programs__input input-data-usercat" type="email" name="email" id="email"
-          placeholder="kuklachev@gmail.com" required>
+        <input class="filter-programs__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com"
+          required>
 
         <label class="filter-programs__input-placeholder" for="telefon">Телефон</label>
-        <input class="filter-programs__input input-data-usercat" type="tel" name="telefon" id="telefon"
-          placeholder="8 (960) 900-60-90" required>
+        <input class="filter-programs__input" type="tel" name="telefon" id="telefon" placeholder="8 (960) 900-60-90"
+          required>
       </fieldset>
 
       <fieldset class="filter-programs__group-comments">
@@ -84,17 +82,16 @@
       <fieldset class="filter-programs__group-yet">
         <legend class="filter-programs__title">Дополнительно</legend>
         <label class="filter-programs__input-placeholder" for="sugarless">Сахарозаменитель</label>
-        <input class="filter-programs__input input-yet" type="checkbox" id="sugarless" name="sugarless"
-          value="sugarless" checked>
+        <input class="filter-programs__input" type="checkbox" id="sugarless" name="sugarless" value="sugarless" checked>
 
         <label class="filter-programs__input-placeholder" for="aqua">Питьевая вода</label>
-        <input class="filter-programs__input input-yet" type="checkbox" id="aqua" name="aqua" value="aqua">
+        <input class="filter-programs__input" type="checkbox" id="aqua" name="aqua" value="aqua">
 
         <label class="filter-programs__input-placeholder" for="milk">Молоко</label>
-        <input class="filter-programs__input input-yet" type="checkbox" id="milk" name="milk" value="sugarless">
+        <input class="filter-programs__input" type="checkbox" id="milk" name="milk" value="sugarless">
 
         <label class="filter-programs__input-placeholder" for="vitamins">Витамины</label>
-        <input class="filter-programs__input input-yet" type="checkbox" id="vitamins" name="vitamins" value="vitamins">
+        <input class="filter-programs__input" type="checkbox" id="vitamins" name="vitamins" value="vitamins">
       </fieldset>
 
       <button class="filter-programs__button" type="submit">Отправить заявку</button>
@@ -129,24 +126,27 @@
     <ul class="main-footer__list">
       <li class="main-footer__item main-footer__item--vk">
         <a class="main-footer__social-link" href="#">
-          <img class="main-footer__social-link-icon" src="/images/index-images/index-svg/vkontakte.svg" alt="">
+          <img class="main-footer__social-link-icon" src="/images/index-images/index-svg/vkontakte.svg" width="28"
+            height="22" alt="Ссылка vk.">
         </a>
       </li>
       <li class="main-footer__item main-footer__item--youtube">
-        <a class="main-footer__social-link" href="#">
-          <img class="main-footer__social-link-icon" src="/images/index-images/index-svg/youtube.svg" alt="">
+        <a class="main-footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
+          <img class="main-footer__social-link-icon" src="/images/index-images/index-svg/youtube.svg" width="28"
+            height="22" alt="Ссылка youtube.">
         </a>
       </li>
       <li class="main-footer__item main-footer__item--telegram">
-        <a class="main-footer__social-link" href="#">
-          <img class="main-footer__social-link-icon" src="/images/index-images/index-svg/telegram.svg" alt="">
+        <a class="main-footer__social-link" href="https://t.me/htmlacademy">
+          <img class="main-footer__social-link-icon" src="/images/index-images/index-svg/telegram.svg" width="28"
+            height="22" alt="Ссылка telegram.">
         </a>
       </li>
     </ul>
-    <a href="" class="main-footer__logo-html-academy">
+    <a class="main-footer__logo-html-academy" href="https://htmlacademy.ru/study">
       <p class="main-footer__logo-html-academy-text">HTML Academy</p>
-      <img src="/images/index-images/index-svg/logo-html-academy.svg" width="27" height="34" alt="Логотип html-academy"
-        .>
+      <img src="/images/index-images/index-svg/logo-html-academy.svg" width="27" height="34"
+        alt="Ссылка логотип html-academy.">
     </a>
   </footer>
 

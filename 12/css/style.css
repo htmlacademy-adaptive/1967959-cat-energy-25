@@ -1,0 +1,199 @@
+.page {
+  height: 100%;
+}
+.page-container {
+  flex-grow: 1;
+  margin: 0 auto;
+  max-width: 320px;
+  padding: 0 20px;
+}
+@font-face {
+  src: url("/source/fonts/oswaldregular.woff2") format("woff2");
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  src: url("/source/fonts/oswaldmedium.woff2") format("woff2");
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+.page__body {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  max-width: 320px;
+  min-height: 100%;
+}
+.main-nav .main-nav__link {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+.promo {
+  font-family: "Oswald", sans-serif;
+}
+.promo .promo__container {
+  background-image: url("../../image/images/index-images/index-jpg/index-promo-bg-cat.jpg");
+  background-color: rgba(104, 183, 56, 0.85);
+}
+.promo .promo__wrapper-bacground-color {
+  background: rgba(104, 183, 56, 0.85);
+}
+.promo .promo__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+}
+.promo .promo__description {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.promo .promo__button {
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+.nutrition-programs .nutrition-programs__cards {
+  background-color: #f2f2f2;
+}
+.nutrition-programs .nutrition-programs__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+.nutrition-programs .nutrition-programs__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.nutrition-programs .nutrition-programs__button-icon {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.about-products .about-products__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+.about-products .about-products__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+.example-cat {
+  background-color: #eaeaea;
+}
+.example-cat .example-cat__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+.example-cat .example-cat__number {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+.example-cat .example-cat__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+.example-cat .example-cat__description-total {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.example-cat .example-cat__description-progress {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.contacts .contacts__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+.contacts .contacts__info {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+.main-footer {
+  background-color: #f2f2f2;
+}
+.main-footer .main-footer__logo-html-academy-text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+.main-footer .main-footer__logo-html-academy {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

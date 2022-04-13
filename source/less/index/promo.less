@@ -2,38 +2,19 @@
   font-family: "Oswald", sans-serif;
 
   .promo__container {
-    background-image: url("../../image/images/index-images/index-jpg/index-promo-bg-cat.jpg");
-    background-color: rgba(104, 183, 56, 0.85);
+    .background-image-block();
   }
 
   .promo__wrapper-bacground-color {
-    background: rgba(104, 183, 56, 0.85);
+    background-color: @background-wrapper;
   }
 
   .promo__title {
-    font-family: "Oswald",
-      sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-    color: #ffffff;
-    text-align: center;
+    .fz-h1();
   }
 
   .promo__description {
-    font-family: "Oswald",
-      sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
+    .fz-h5();
     color: #ffffff;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  .promo__button {
-    text-align: center;
-    color: #ffffff;
-    text-decoration: none;
   }
 }

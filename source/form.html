@@ -9,23 +9,26 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__logo">
-      <a class="main-header__logo-icon" href="/">
-        <img src="image/images/index-images/index-svg/logo-mobile.svg" width="33.32" height="37.61">
+    <div class="main-header__wrapper-logo">
+      <a class="main-header__logo" href="/">
+        <img main-header__logo-image src="image/images/index-images/index-svg/logo-mobile.svg" width="33.32"
+          height="37.61">
       </a>
       <a class="main-header__logo-text" href="/">
-        <img src="image/images/index-images/index-svg/logo-text.svg" width="101" height="18">
+        <img main-header__logo-text-image src="image/images/index-images/index-svg/logo-text.svg" width="101"
+          height="18">
       </a>
     </div>
 
     <nav class="main-nav">
       <div class="main-nav__wrapper">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span> </button>
-        <ul class="main-nav__list nav-list">
-          <li class="nav-list__item nav-list__item--activ"><a href="index.html">Главная</a></li>
-          <li class="nav-list__item"><a href="catalog.html">Каталог продкуции</a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>Открыть меню
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--activ"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продкуции</a>
           </li>
-          <li class="nav-list__item"><a href="#">Подбор программы</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
         </ul>
       </div>
     </nav>
@@ -33,12 +36,12 @@
 
   <main class="main-container">
     <form class="filter-programs" action="https://echo.htmlacademy.ru" method="get">
-      <h2 class="filter-programs__title">Подбор программы</h2>
-      <p class="filter-programs__description">Заполните анкету, и мы подберем
+      <h2 class="filter-programs__filter-title">Подбор программы</h2>
+      <p class="filter-programs__filter-description-title">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
 
       <fieldset class="filter-programs__group-data-cat">
-        <legend class="filter-programs__title-group" visually-hidden>Данные кота</legend>
+        <legend class="visually-hidden">Данные кота</legend>
 
         <label for="name-cat" class="filter-programs__input-placeholder">Имя</label>
         <input type="text" class="filter-programs__input" id="name-cat" name="name-cat" placeholder="Барсик" required>
@@ -74,14 +77,15 @@
       </fieldset>
 
       <fieldset class="filter-programs__group-comments">
-        <legeng class="filter-programs__titlegroup">Комментарий</legeng>
-        <textarea class="filter-programs__user-comment" name="comment" id="comment" cols="30" rows="10"></textarea>
+        <legeng class="filter-programs__title-group">Комментарий</legeng>
+        <textarea class="filter-programs__input-placeholder" name="comment"
+          placeholder="Расскажите обо всех повАдках кота" id="comment" cols="30" rows="10"></textarea>
       </fieldset>
 
 
 
       <fieldset class="filter-programs__group-yet">
-        <legend class="filter-programs__title">Дополнительно</legend>
+        <legend class="filter-programs__title-group">Дополнительно</legend>
         <label class="filter-programs__input-placeholder" for="sugarless">Сахарозаменитель</label>
         <input class="filter-programs__input" type="checkbox" id="sugarless" name="sugarless" value="sugarless" checked>
 
@@ -95,7 +99,7 @@
         <input class="filter-programs__input" type="checkbox" id="vitamins" name="vitamins" value="vitamins">
       </fieldset>
 
-      <button class="filter-programs__button" type="submit">Отправить заявку</button>
+      <button class="filter-programs__filter-button button button--green" type="submit">Отправить заявку</button>
       <span class="filter-programs__message">* — Обязательные поля</span>
 
     </form>
@@ -103,19 +107,22 @@
     </section>
 
     <section class="contacts">
-      <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
-      <address class="contacts__address">
-        <p class="contacts__info">ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург</p>
-      </address>
-      <img class="contacts__map-location-image" src="image/images/index-images/index-png/map.jpg" width="320"
-        height="362" alt="Карта расположения офиса продаж" usemap="#navigation">
-      <map contacts__map-location name="navigation" id="navigation">
-        <area shape="" coords="" href="" alt="ул. Большая
+      <div class="contacts-gray-block__container">
+        <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
+        <address class="contacts__address">
+          <p class="contacts__info">ул. Большая
             Конюшенная, д. 19/8
-            Санкт-Петербург">
-      </map>
+            Санкт-Петербург</p>
+        </address>
+        <img class="contacts__map-location-image" src="image/images/index-images/index-png/map.jpg" width="320"
+          height="362" alt="Карта расположения офиса продаж" usemap="#navigation">
+        <map contacts__map-location name="navigation" id="navigation">
+          <area shape="" coords="" href="" alt="ул. Большая
+                    Конюшенная, д. 19/8
+                    Санкт-Петербург">
+        </map>
+      </div>
+
     </section>
   </main>
 
@@ -146,7 +153,7 @@
     </ul>
     <a class="main-footer__logo-html-academy" href="https://htmlacademy.ru/study">
       <p class="main-footer__logo-html-academy-text">HTML Academy</p>
-      <img src="image/images/index-images/index-svg/htmlacademy.svg" width="27" height="34"
+      <img src="image/images/index-images/index-svg/logo-html-academy.svg" width="27" height="34"
         alt="Ссылка логотип html-academy.">
     </a>
   </footer>

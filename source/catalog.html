@@ -9,23 +9,26 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__logo">
-      <a class="main-header__logo-icon" href="/">
-        <img src="image/images/index-images/index-svg/logo-mobile.svg" width="33.32" height="37.61">
+    <div class="main-header__wrapper-logo">
+      <a class="main-header__logo" href="/">
+        <img main-header__logo-image src="image/images/index-images/index-svg/logo-mobile.svg" width="33.32"
+          height="37.61">
       </a>
       <a class="main-header__logo-text" href="/">
-        <img src="image/images/index-images/index-svg/logo-text.svg" width="101" height="18">
+        <img main-header__logo-text-image src="image/images/index-images/index-svg/logo-text.svg" width="101"
+          height="18">
       </a>
     </div>
 
     <nav class="main-nav">
       <div class="main-nav__wrapper">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span> </button>
-        <ul class="main-nav__list nav-list">
-          <li class="nav-list__item nav-list__item--activ"><a href="index.html">Главная</a></li>
-          <li class="nav-list__item"><a href="#">Каталог продкуции</a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>Открыть меню
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--activ"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продкуции</a>
           </li>
-          <li class="nav-list__item"><a href="form.html">Подбор программы</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
         </ul>
       </div>
     </nav>
@@ -39,7 +42,8 @@
         <li class="catalog-products__item">
           <article class="products-cards">
             <img class="products-cards__image products-cards__image--500g"
-              src="image/images/catalog-images/catalog-images-jpg/cat-energy-chicken.jpg" alt="Питание с курицей 500грамм.">
+              src="image/images/catalog-images/catalog-images-jpg/cat-energy-chicken.jpg"
+              alt="Питание с курицей 500грамм.">
             <h4 class="products-cards__title-cards">Cat Energy
               PRO
               500 г</h4>
@@ -60,7 +64,7 @@
               </tr>
 
             </table>
-            <a class="products-cards__button button" href="#">Заказать</a>
+            <a class="products-cards__button button button--green" href="#">Заказать</a>
           </article>
 
         </li>
@@ -90,7 +94,7 @@
               </tr>
 
             </table>
-            <a class="products-cards__button button" href="#">Заказать</a>
+            <a class="products-cards__button button button--green" href="#">Заказать</a>
           </article>
 
         </li>
@@ -119,7 +123,7 @@
               </tr>
 
             </table>
-            <a class="products-cards__button button" href="#">Заказать</a>
+            <a class="products-cards__button button button--green" href="#">Заказать</a>
           </article>
 
         </li>
@@ -127,7 +131,8 @@
         <li class="catalog-products__item">
           <article class="products-cards">
             <img class="products-cards__image products-cards__image--1000g"
-              src="image/images/catalog-images/catalog-images-jpg/cat-energy-fish-xxl.jpg" alt="Питание с рыбой 1000грамм.">
+              src="image/images/catalog-images/catalog-images-jpg/cat-energy-fish-xxl.jpg"
+              alt="Питание с рыбой 1000грамм.">
             <h4 class="products-cards__title-cards">Cat Energy
               PRO
               1000 г</h4>
@@ -148,7 +153,7 @@
               </tr>
 
             </table>
-            <a class="products-cards__button button" href="#">Заказать</a>
+            <a class="products-cards__button button button--green" href="#">Заказать</a>
           </article>
 
         </li>
@@ -178,7 +183,7 @@
               </tr>
 
             </table>
-            <a class="products-cards__button button" href="#">Заказать</a>
+            <a class="products-cards__button button button--green" href="#">Заказать</a>
           </article>
 
         </li>
@@ -208,7 +213,7 @@
               </tr>
 
             </table>
-            <a class="products-cards__button button" href="#">Заказать</a>
+            <a class="products-cards__button button button--green" href="#">Заказать</a>
           </article>
 
         </li>
@@ -237,18 +242,18 @@
               </tr>
 
             </table>
-            <a class="products-cards__button button" href="#">Заказать</a>
+            <a class="products-cards__button button button--green" href="#">Заказать</a>
           </article>
 
         </li>
       </ul>
       <div class="catalog-products__load-more">
-        <button class="catalog-products__button button"><img class="catalog-products__button-image"
+        <button class="catalog-products__button "><img class="catalog-products__button-image"
             src="image/images/catalog-images/catalog-images-svg/catalog-icon-button-plus.svg"
             alt="Кнопка показать ещё."></button>
         <h4 class="catalog-products__title-cards">Показать еще 100500 товаров</h4>
         <p class="catalog-products__description">На самом деле вкусов гораздо больше!</p>
-        <a class="catalog-products__button catalog-products__button--all" href="#">Показать всё</a>
+        <a class="catalog-products__button button button--gray" href="#">Показать всё</a>
       </div>
     </section>
 
@@ -265,7 +270,7 @@
                 <td class="products-cards-add__meaning">200р</td>
               </tr>
             </table>
-            <a class="products-cards-add__button button" href="#">Заказать</a>
+            <a class="products-cards-add__cards-button button button--green" href="#">Заказать</a>
           </article>
         </li>
 
@@ -278,7 +283,7 @@
                 <td class="products-cards-add__meaning">50р</td>
               </tr>
             </table>
-            <a class="products-cards-add__button button" href="#">Заказать</a>
+            <a class="products-cards-add__button button button--green" href="#">Заказать</a>
           </article>
         </li>
 
@@ -291,7 +296,7 @@
                 <td class="products-cards-add__meaning">100р</td>
               </tr>
             </table>
-            <a class="products-cards-add__button button" href="#">Заказать</a>
+            <a class="products-cards-add__button button button--green" href="#">Заказать</a>
           </article>
         </li>
 
@@ -304,7 +309,7 @@
                 <td class="products-cards-add__meaning">300р</td>
               </tr>
             </table>
-            <a class="products-cards-add__button button" href="#">Заказать</a>
+            <a class="products-cards-add__button button button--green" href="#">Заказать</a>
           </article>
         </li>
       </ul>
@@ -312,29 +317,34 @@
 
     <section class="gift">
       <div class="gift__gift-container">
-        <img class="gift__image-gift" src="image/images/catalog-images/catalog-images-svg/icon_gift.svg" width="78"
-          height="80" alt="Изображжение подарочной коробки с бантом.">
-        <p class="gift__description">Закажите все
-          и получите чехол для
-          кота в подарок!</p>
+        <div class="gift__wrapper-background-color">
+          <img class="gift__image-gift" src="image/images/catalog-images/catalog-images-svg/icon_gift.svg" width="78"
+            height="80" alt="Изображжение подарочной коробки с бантом.">
+          <h4 class="gift__gift-title">Закажите все
+            и получите чехол для
+            кота в подарок!</h4>
+        </div>
       </div>
     </section>
 
 
     <section class="contacts">
-      <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
-      <address class="contacts__address">
-        <p class="contacts__info">ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург</p>
-      </address>
-      <img class="contacts__map-location-image" src="image/images/index-images/index-jpg/map.jpg" width="320" height="362"
-        alt="Карта расположения офиса продаж" usemap="#navigation">
-      <map contacts__map-location name="navigation" id="navigation">
-        <area shape="" coords="" href="" alt="ул. Большая
+      <div class="contacts-gray-block__container">
+        <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
+        <address class="contacts__address">
+          <p class="contacts__info">ул. Большая
             Конюшенная, д. 19/8
-            Санкт-Петербург">
-      </map>
+            Санкт-Петербург</p>
+        </address>
+        <img class="contacts__map-location-image" src="image/images/index-images/index-png/map.jpg" width="320"
+          height="362" alt="Карта расположения офиса продаж" usemap="#navigation">
+        <map contacts__map-location name="navigation" id="navigation">
+          <area shape="" coords="" href="" alt="ул. Большая
+                        Конюшенная, д. 19/8
+                        Санкт-Петербург">
+        </map>
+      </div>
+
     </section>
   </main>
 
@@ -365,7 +375,7 @@
     </ul>
     <a class="main-footer__logo-html-academy" href="https://htmlacademy.ru/study">
       <p class="main-footer__logo-html-academy-text">HTML Academy</p>
-      <img src="image/images/index-images/index-svg/htmlacademy.svg" width="27" height="34"
+      <img src="image/images/index-images/index-svg/logo-html-academy.svg" width="27" height="34"
         alt="Ссылка логотип html-academy.">
     </a>
   </footer>

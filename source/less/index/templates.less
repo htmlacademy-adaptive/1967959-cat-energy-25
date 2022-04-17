@@ -1,10 +1,10 @@
 .background-image-block() {
-  background-image: url("../../image/images/index-images/index-jpg/index-promo-bg-cat.jpg");
+  background-image: url("../image/index-images/index-jpg/index-promo-bg-cat.jpg");
   background-color: @background-wrapper;
 }
 
 .background-image-block-catalog() {
-  background-image: url("../../image/images/catalog-images/catalog-images-jpg/gift-cat-image-.jpg");
+  background-image: url("../image/catalog-images/catalog-images-jpg/gift-cat-image-.jpg");
 }
 
 .fz-menu() {
@@ -115,7 +115,7 @@
   color: @color-text-2;
 }
 
-/*.fonts-title(@size; @heght; weight; @color; @decoration) {
+.fonts-title(@size:36px; @height:36px;@weight:400; @color: #000000; @transform: none) {
   font-family: "Oswald",
     sans-serif;
   font-style: normal;
@@ -124,11 +124,13 @@
   font-weight: @weight;
   text-align: center;
   color: @color;
-  text-decoration: @decoration;
+  text-decoration: none;
+  text-transform: @transform;
 }
 
-.fonts-text(@size; @heght; @weight; @color;
-@decoration) {
+/*
+.fonts-text(@size: 14px; @heght: 18px; @weight: 400; @color: #ffffff;
+@decoration: none) {
   font-family: "Arial",
     sans-serif;
   font-style: normal;

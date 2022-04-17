@@ -7,115 +7,7 @@
   background-image: url("../image/catalog-images/catalog-images-jpg/gift-cat-image-.jpg");
 }
 
-.fz-menu() {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: @color-title-1;
-  text-decoration: none;
-  list-style: none;
-}
-
-.fz-title-numbers() {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  text-align: center;
-  color: @color-title-1;
-}
-
-.fz-h1() {
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  color: @color-title-3;
-}
-
-.fz-h2() {
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  color: @color-title-1;
-}
-
-.fz-h3() {
-  font-family: "Oswald",
-    sans-serif;
-  font-size: 24px;
-  line-height: 37px;
-  font-weight: 400;
-  color: @color-title-1;
-  text-transform: uppercase;
-}
-
-.fz-h4() {
-  font-family: "Oswald",
-    sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: @color-title-1;
-  text-transform: uppercase;
-}
-
-.fz-h4-input-placeholder() {
-  font-family: "Oswald",
-    sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: @color-title-2;
-  text-transform: uppercase;
-}
-
-.fz-h5() {
-  font-family: "Oswald",
-    sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  color: @color-title-1;
-  text-transform: uppercase;
-}
-
-.fz-description-excat() {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: @color-text-2;
-}
-
-.fz-content() {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: @color-text-2;
-}
-
-.fz-cards-content() {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: @color-text-2;
-}
-
-.fonts-title(@size:36px; @height:36px;@weight:400; @color: #000000; @transform: none) {
+.fz-menu (@size: 20px; @height: 20px; @weight: 500; @color: @color-title-1; @transform: uppercase) {
   font-family: "Oswald",
     sans-serif;
   font-style: normal;
@@ -128,9 +20,85 @@
   text-transform: @transform;
 }
 
-/*
-.fonts-text(@size: 14px; @heght: 18px; @weight: 400; @color: #ffffff;
-@decoration: none) {
+.fz-h1 (@size: 36px; @height: 36px; @weight: 400; @color: @color-title-3; @transform: none) {
+  font-family: "Oswald",
+    sans-serif;
+  font-style: normal;
+  font-size: @size;
+  line-height: @height;
+  font-weight: @weight;
+  text-align: center;
+  color: @color;
+  text-decoration: none;
+  text-transform: @transform;
+}
+
+.fz-h2 (@size: 36px; @height: 36px; @weight: 400; @color: @color-title-1; @transform: none) {
+  font-family: "Oswald",
+    sans-serif;
+  font-style: normal;
+  font-size: @size;
+  line-height: @height;
+  font-weight: @weight;
+  text-align: center;
+  color: @color;
+  text-decoration: none;
+  text-transform: @transform;
+}
+
+.fz-h3 (@size: 24px; @height: 37px; @weight: 400; @color: @color-title-1; @transform: uppercase) {
+  font-family: "Oswald",
+    sans-serif;
+  font-style: normal;
+  font-size: @size;
+  line-height: @height;
+  font-weight: @weight;
+  text-align: center;
+  color: @color;
+  text-decoration: none;
+  text-transform: @transform;
+}
+
+
+.fz-h4 (@size: 16px; @height: 20px; @weight: 400; @color: @color-title-1; @transform: uppercase) {
+  font-family: "Oswald",
+    sans-serif;
+  font-style: normal;
+  font-size: @size;
+  line-height: @height;
+  font-weight: @weight;
+  text-align: center;
+  color: @color;
+  text-decoration: none;
+  text-transform: @transform;
+}
+
+.fz-h5 (@size: 14px; @height: 20px; @weight: 400; @color: @color-title-1; @transform: uppercase) {
+  font-family: "Oswald",
+    sans-serif;
+  font-style: normal;
+  font-size: @size;
+  line-height: @height;
+  font-weight: @weight;
+  color: @color;
+  text-decoration: none;
+  text-transform: @transform;
+}
+
+
+.fz-content (@size: 14px; @height: 18px; @weight: 400; @color: @color-content-2; @transform: none) {
+  font-family: "Arial",
+    sans-serif;
+  font-style: normal;
+  font-size: @size;
+  line-height: @height;
+  font-weight: @weight;
+  color: @color;
+  text-decoration: none;
+  text-transform: @transform;
+}
+
+.fz-cards-content (@size: 12px; @height: 16px; @weight: 400; @color: @color-content-2; @transform: none) {
   font-family: "Arial",
     sans-serif;
   font-style: normal;
@@ -139,6 +107,6 @@
   font-weight: @weight;
   text-align: center;
   color: @color;
-  text-decoration: @decoration;
+  text-decoration: none;
+  text-transform: @transform;
 }
-*/

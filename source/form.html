@@ -36,71 +36,71 @@
 
     <main class="main-container">
       <form class="filter-programs" action="https://echo.htmlacademy.ru" method="get">
-        <h2 class="filter-programs__filter-title">Подбор программы</h2>
-        <p class="filter-programs__filter-description-title">Заполните анкету, и мы подберем
+        <h2 class="filter-programs__title">Подбор программы</h2>
+        <p class="filter-programs__sub-title">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
 
         <fieldset class="filter-programs__group-data-cat">
           <legend class="visually-hidden">Данные кота</legend>
 
-          <label for="name-cat" class="filter-programs__input-placeholder">Имя</label>
-          <input type="text" class="filter-programs__input" id="name-cat" name="name-cat" placeholder="Барсик" required>
+          <label for="name-cat" class="filter-programs__title-input">Имя</label>
+          <input class="filter-programs__input" type="text" id="name-cat" name="name-cat" placeholder="Барсик" required>
 
-          <label for="weight-cat" class="filter-programs__input-placeholder">Вес(кг)</label>
-          <input type="text" class="filter-programs__input" name="weight-cat" id="weight-cat" placeholder="7" required>
+          <label for="weight-cat" class="filter-programs__title-input">Вес(кг)</label>
+          <input class="filter-programs__input" type="text" name="weight-cat" id="weight-cat" placeholder="7" required>
 
-          <label for="age-cat" class="filter-programs__input-placeholder">Возраст(лет)</label>
-          <input type="text" class="filter-programs__input" id="age-cat" name="age-cat" placeholder="7">
+          <label for="age-cat" class="filter-programs__title-input">Возраст(лет)</label>
+          <input class="filter-programs__input" type="text" id="age-cat" name="age-cat" placeholder="7">
         </fieldset>
 
         <fieldset class="filter-programs__group-data-programs-cat">
           <legend class="filter-programs__title-group visually-hidden">Выбор программы питания</legend>
-          <label for="fit" class="filter-programs__input-placeholder">Похудение</label>
+          <label class="filter-programs__title-input" for="fit">Похудение</label>
           <input class="filter-programs__input" type="radio" name="fit" id="fit" checked>
 
-          <label for="fat" class="filter-programs__input-placeholder">Набор массы</label>
+          <label class="filter-programs__title-input" for="fat">Набор массы</label>
           <input class="filter-programs__input" type="radio" name="fat" id="fat">
 
-          <label for="help" class="filter-programs__input-placeholder">Не знаю (нужен ваш совет)</label>
+          <label class="filter-programs__title-input" for="help">Не знаю (нужен ваш совет)</label>
           <input class="filter-programs__input" type="radio" name="help" id="help" value="help">
         </fieldset>
 
         <fieldset class="filter-programs__group-data-usercat">
           <legend class="filter-programs__title-group">Контактные данные (владельца кота)</legend>
-          <label class="filter-programs__input-placeholder" for="email">E-mail</label>
+          <label class="filter-programs__title-input" for="email">E-mail</label>
           <input class="filter-programs__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com"
             required>
 
-          <label class="filter-programs__input-placeholder" for="telefon">Телефон</label>
+          <label class="filter-programs__title-input" for="telefon">Телефон</label>
           <input class="filter-programs__input" type="tel" name="telefon" id="telefon" placeholder="8 (960) 900-60-90"
             required>
         </fieldset>
 
         <fieldset class="filter-programs__group-comments">
           <legeng class="filter-programs__title-group">Комментарий</legeng>
-          <textarea class="filter-programs__input-placeholder" name="comment"
-            placeholder="Расскажите обо всех повАдках кота" id="comment" cols="30" rows="10"></textarea>
+          <textarea class="filter-programs__input-placeholder" name="comment" placeholder="Расскажите обо всех повАдках кота"
+            id="comment" cols="30" rows="10"></textarea>
         </fieldset>
 
 
 
         <fieldset class="filter-programs__group-yet">
           <legend class="filter-programs__title-group">Дополнительно</legend>
-          <label class="filter-programs__input-placeholder" for="sugarless">Сахарозаменитель</label>
+          <label class="filter-programs__title-input" for="sugarless">Сахарозаменитель</label>
           <input class="filter-programs__input" type="checkbox" id="sugarless" name="sugarless" value="sugarless"
             checked>
 
-          <label class="filter-programs__input-placeholder" for="aqua">Питьевая вода</label>
+          <label class="filter-programs__title-input" for="aqua">Питьевая вода</label>
           <input class="filter-programs__input" type="checkbox" id="aqua" name="aqua" value="aqua">
 
-          <label class="filter-programs__input-placeholder" for="milk">Молоко</label>
+          <label class="filter-programs__title-input" for="milk">Молоко</label>
           <input class="filter-programs__input" type="checkbox" id="milk" name="milk" value="sugarless">
 
-          <label class="filter-programs__input-placeholder" for="vitamins">Витамины</label>
+          <label class="filter-programs__title-input" for="vitamins">Витамины</label>
           <input class="filter-programs__input" type="checkbox" id="vitamins" name="vitamins" value="vitamins">
         </fieldset>
 
-        <button class="filter-programs__filter-button button button--green" type="submit">Отправить заявку</button>
+        <button class="filter-programs__button button button--green" type="submit">Отправить заявку</button>
         <span class="filter-programs__message">* — Обязательные поля</span>
 
       </form>

@@ -1,18 +1,71 @@
 .nutrition-programs {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+
+  .nutrition-programs__list-cards {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
   .nutrition-programs__cards {
+    margin: 0;
+    padding: 0;
     background-color: @background-block;
   }
 
-  .nutrition-programs__title {
+  .nutrition-programs__item {
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
+    width: 280px;
+    min-height: 266px;
+  }
+
+
+  .nutrition-programs__title-cards {
     .fz-h2();
   }
 
-  .nutrition-programs__description {
+  .nutrition-programs__description-cards {
     .fz-content();
   }
 
 
-  .nutrition-programs__button-icon {
+  .nutrition-programs__button-cards {
     .fz-h4();
+  }
+
+}
+
+@media (min-width: @tablet-width) {
+  .page-container {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  .nutrition-programs__item {
+    min-width: 708px;
+    min-height: 372px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-container {
+    width: 1220px;
+    padding: 0 110px;
+  }
+
+  .nutrition-programs__list-cards {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .nutrition-programs__item {
+    min-width: 570px;
+    min-height: 374px;
   }
 }

@@ -1,4 +1,7 @@
 .example-cat {
+  margin: 0 auto;
+  width: 280px;
+  padding: 0 20px;
   background-color: #eaeaea;
 
   .example-cat__title {
@@ -19,5 +22,21 @@
 
   .example-cat__title-progress {
     .fz-h4();
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .example-cat {
+    width: 708px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example-cat {
+    width: 1220px;
+    padding: 0 110px;
+
   }
 }

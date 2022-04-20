@@ -1,8 +1,16 @@
 .example-cat {
   margin: 0 auto;
-  width: 280px;
-  padding: 0 20px;
-  background-color: #eaeaea;
+
+  .example-cat__wrapper {
+    margin: 0 auto;
+    width: 280px;
+    padding: 0 20px;
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
+    display: flex;
+    flex-direction: column;
+    background-color: @background-block;
+  }
 
   .example-cat__title {
     .fz-h2();
@@ -25,18 +33,19 @@
   }
 }
 
-
 @media (min-width: @tablet-width) {
-  .example-cat {
+  .example-cat .example-cat__wrapper {
     width: 708px;
+    min-height: auto;
     padding: 0 30px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .example-cat {
+  .example-cat .example-cat__wrapper {
     width: 1220px;
     padding: 0 110px;
-
+    flex-direction: row;
   }
 }

@@ -1,26 +1,37 @@
-.background-color-green {
-  background-color: @background-wrapper;
-}
 
-.container-promo {
+.container {
   margin: 0 auto;
   width: 280px;
   padding: 0 20px;
   outline: 3px solid #05c4f4;
   outline-offset: -3px;
-  display: flex;
-  flex-direction: column;
 }
 
 .promo {
-  .promo__image-product {
-    width: 270px;
-    height: 270px;
-    object-fit: cover;
+  position: relative;
+
+  .promo__image {
+    position: relative;
+    .background-image-block();
+    width: 320px;
+    height: 302px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .promo__wrapper-color-image {
+    width: 320px;
+    height: 302px;
+    background-color: @background-wrapper;
   }
 
   .promo__box-content {
-    .background-image-block();
+    margin: 0;
+    position: relative;
+    z-index: 99;
+    margin-top: -300px;
+    display: flex;
+    flex-direction: column;
   }
 
   .promo__title {
@@ -33,20 +44,30 @@
 }
 
 @media (min-width: @tablet-width) {
-  .container-promo {
+  .container {
     width: 708px;
     padding: 0 30px;
     margin: 0 auto;
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
   }
 
   .promo {
-    .promo__image-product {
-      width: 709px;
-      height: 609px;
-      object-fit: cover;
+    .promo__image--none {
+      display: none;
+    }
+
+    .promo__title {
+      .fz-h1(@color: @color-title-1);
+    }
+
+    .promo__description {
+      .fz-h5(@color: @color-title-1);
     }
 
     .promo__box-content {
+      margin: 0;
+      margin-top: 100px;
       min-height: 750px;
     }
   }
@@ -54,13 +75,33 @@
 
 
 @media (min-width: @desktop-width) {
-  .container-promo {
+  .container {
     width: 1220px;
     padding: 0 110px;
     margin: 0 auto;
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
   }
 
   .promo {
+    height: 694px;
+    display: flex;
+    flex-direction: row-reverse;
+
+    .promo__image--block {
+      display: block;
+    }
+
+    .promo__image {
+      width: 720px;
+      height: 694px;
+    }
+
+    .promo__wrapper-color-image {
+      width: 720px;
+      height: 694px;
+    }
+
     .promo__image-product {
       width: 552px;
       height: 499px;
@@ -68,8 +109,9 @@
     }
 
     .promo__box-content {
+      margin: 0;
       display: flex;
-      flex-direction: row;
+      height: 694px;
     }
   }
 }

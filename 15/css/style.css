@@ -26,6 +26,8 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   border: none;
+  width: min-content;
+  height: min-content;
 }
 .button--green {
   background-color: rgba(104, 183, 56, 0.85);
@@ -50,7 +52,7 @@ img {
 }
 .page__body {
   min-height: 100%;
-  margin: 0;
+  margin: 0 auto;
 }
 .container-header {
   margin: 0 auto;
@@ -143,28 +145,37 @@ img {
   text-decoration: none;
   text-transform: uppercase;
 }
-.background-color-green {
-  background-color: rgba(104, 183, 56, 0.85);
-}
-.container-promo {
+.container {
   margin: 0 auto;
   width: 280px;
   padding: 0 20px;
   outline: 3px solid #05c4f4;
   outline-offset: -3px;
-  display: flex;
-  flex-direction: column;
 }
-.promo .promo__image-product {
-  width: 270px;
-  height: 270px;
-  object-fit: cover;
+.promo {
+  position: relative;
+}
+.promo .promo__image {
+  position: relative;
+  background-image: url("../image/index-images/index-jpg/index-promo-bg-cat.jpg");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 302px;
+  display: block;
+  margin: 0 auto;
+}
+.promo .promo__wrapper-color-image {
+  width: 320px;
+  height: 302px;
+  background-color: rgba(104, 183, 56, 0.85);
 }
 .promo .promo__box-content {
-  background-image: url("../image/index-images/index-jpg/index-promo-bg-cat.jpg");
-  background-color: rgba(104, 183, 56, 0.85);
-  background-repeat: no-repeat;
-  object-fit: cover;
+  margin: 0;
+  position: relative;
+  z-index: 99;
+  margin-top: -300px;
+  display: flex;
+  flex-direction: column;
 }
 .promo .promo__title {
   font-family: "Oswald", sans-serif;
@@ -188,25 +199,66 @@ img {
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  .container-promo {
+  .container {
     width: 708px;
     padding: 0 30px;
     margin: 0 auto;
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
   }
-  .promo .promo__image-product {
-    width: 709px;
-    height: 609px;
-    object-fit: cover;
+  .promo .promo__image--none {
+    display: none;
+  }
+  .promo .promo__title {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    text-transform: none;
+  }
+  .promo .promo__description {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
   }
   .promo .promo__box-content {
+    margin: 0;
+    margin-top: 100px;
     min-height: 750px;
   }
 }
 @media (min-width: 1440px) {
-  .container-promo {
+  .container {
     width: 1220px;
     padding: 0 110px;
     margin: 0 auto;
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
+  }
+  .promo {
+    height: 694px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .promo .promo__image--block {
+    display: block;
+  }
+  .promo .promo__image {
+    width: 720px;
+    height: 694px;
+  }
+  .promo .promo__wrapper-color-image {
+    width: 720px;
+    height: 694px;
   }
   .promo .promo__image-product {
     width: 552px;
@@ -214,8 +266,9 @@ img {
     object-fit: cover;
   }
   .promo .promo__box-content {
+    margin: 0;
     display: flex;
-    flex-direction: row;
+    height: 694px;
   }
 }
 .container-nutrition-programs {

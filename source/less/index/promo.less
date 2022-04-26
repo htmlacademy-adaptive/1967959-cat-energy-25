@@ -1,32 +1,32 @@
 
-.container {
+.promo--container {
   margin: 0 auto;
-  width: 280px;
+  max-width: 280px;
   padding: 0 20px;
   outline: 3px solid #05c4f4;
   outline-offset: -3px;
 }
 
 .promo {
-  position: relative;
-
   .promo__image {
     position: relative;
     .background-image-block();
-    width: 320px;
     height: 302px;
     display: block;
     margin: 0 auto;
   }
 
   .promo__wrapper-color-image {
-    width: 320px;
+    margin: 0;
+    padding: 0;
     height: 302px;
     background-color: @background-wrapper;
   }
 
+
   .promo__box-content {
     margin: 0;
+    padding: 0;
     position: relative;
     z-index: 99;
     margin-top: -300px;
@@ -44,8 +44,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .container {
-    width: 708px;
+  .promo--container {
+    max-width: 708px;
     padding: 0 30px;
     margin: 0 auto;
     outline: 3px solid #05c4f4;
@@ -67,6 +67,7 @@
 
     .promo__box-content {
       margin: 0;
+      padding: 0;
       min-height: 750px;
     }
   }
@@ -74,24 +75,32 @@
 
 
 @media (min-width: @desktop-width) {
-  .container {
-    width: 1220px;
+  .promo--container {
+    max-width: 1220px;
     padding: 0 110px;
-    margin: 0 auto;
     outline: 3px solid #05c4f4;
     outline-offset: -3px;
   }
 
+
   .promo {
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
     height: 694px;
     display: flex;
     flex-direction: row-reverse;
 
     .promo__image--block {
+      margin: 0;
+      padding: 0;
       display: block;
     }
 
     .promo__image {
+      outline: 3px solid #05c4f4;
+      outline-offset: -3px;
+      margin: 0;
+      padding: 0;
       width: 720px;
       height: 694px;
     }
@@ -102,15 +111,23 @@
     }
 
     .promo__image-product {
+      margin: 0;
+      padding: 0;
       width: 552px;
       height: 499px;
       object-fit: cover;
     }
 
     .promo__box-content {
+      outline: 3px solid #05c4f4;
+      outline-offset: -3px;
       margin: 0;
+      padding: 0;
+      position: relative;
+      width: 500px;
       display: flex;
       height: 694px;
+      z-index: 99;
     }
   }
 }

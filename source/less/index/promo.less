@@ -1,19 +1,24 @@
 
 .promo--container {
   margin: 0 auto;
-  max-width: 280px;
+  width: 280px;
   padding: 0 20px;
   outline: 3px solid #05c4f4;
   outline-offset: -3px;
 }
 
 .promo {
+  padding-top: 400px;
+  position: relative;
+
   .promo__image {
-    position: relative;
+    position: absolute;
+    left: 0;
+    top: 0;
     .background-image-block();
+    width: 320px;
     height: 302px;
     display: block;
-    margin: 0 auto;
   }
 
   .promo__wrapper-color-image {
@@ -45,7 +50,7 @@
 
 @media (min-width: @tablet-width) {
   .promo--container {
-    max-width: 708px;
+    width: 708px;
     padding: 0 30px;
     margin: 0 auto;
     outline: 3px solid #05c4f4;
@@ -76,7 +81,7 @@
 
 @media (min-width: @desktop-width) {
   .promo--container {
-    max-width: 1220px;
+    width: 1220px;
     padding: 0 110px;
     outline: 3px solid #05c4f4;
     outline-offset: -3px;
@@ -88,7 +93,6 @@
     outline-offset: -3px;
     height: 694px;
     display: flex;
-    flex-direction: row-reverse;
 
     .promo__image--block {
       margin: 0;
@@ -99,8 +103,7 @@
     .promo__image {
       outline: 3px solid #05c4f4;
       outline-offset: -3px;
-      margin: 0;
-      padding: 0;
+      left: 50%;
       background-size: 100%;
       width: 720px;
       height: 694px;

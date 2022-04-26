@@ -1,0 +1,786 @@
+@font-face {
+  src: url("../../fonts/oswaldregular.woff2") format("woff2");
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  src: url("../../fonts/oswaldmedium.woff2") format("woff2");
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.button {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  width: min-content;
+  height: min-content;
+}
+.button--green {
+  background-color: rgba(104, 183, 56, 0.85);
+  color: #ffffff;
+}
+.button--gray {
+  background-color: #f2f2f2;
+  color: #444444;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.page {
+  height: 100%;
+}
+.page__body {
+  min-height: 100%;
+  margin: 0 auto;
+}
+.container-header {
+  margin: 0 auto;
+  width: 280px;
+  padding: 0 20px;
+}
+.main-header {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+  display: flex;
+  flex-direction: column;
+}
+.main-header .main-header__wrapper-logo {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+  display: flex;
+  align-items: center;
+  max-width: 280px;
+  min-height: 38px;
+}
+.main-header .main-header__logo {
+  width: 33.32px;
+  height: 37.61;
+}
+.main-header .main-header__logo-text {
+  width: 101px;
+  height: 18px;
+}
+.main-header .main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+}
+.main-header .main-nav__list {
+  margin: 0;
+  list-style: none;
+}
+.main-header .main-nav__toggle {
+  display: none;
+}
+@media (min-width: 768px) {
+  .container-header {
+    width: 708px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-header .main-nav__toggle {
+    display: none;
+  }
+  .main-header .main-header__wrapper-logo {
+    min-width: 174px;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-header .main-nav {
+    width: 300px;
+    display: flex;
+  }
+}
+@media (min-width: 1440px) {
+  .container-header {
+    width: 1220px;
+    padding: 0 110px;
+  }
+  .main-header .main-header__wrapper-logo {
+    width: 202px;
+    min-height: 59px;
+  }
+  .main-header .main-nav__wrapper {
+    min-width: 478px;
+    min-height: 40px;
+  }
+}
+.main-nav {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+}
+.main-nav .main-nav__link {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.container {
+  margin: 0 auto;
+  width: 280px;
+  padding: 0 20px;
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+}
+.promo {
+  position: relative;
+}
+.promo .promo__image {
+  position: relative;
+  background-image: url("../image/index-images/index-jpg/index-promo-bg-cat.jpg");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 302px;
+  display: block;
+  margin: 0 auto;
+}
+.promo .promo__wrapper-color-image {
+  width: 320px;
+  height: 302px;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+.promo .promo__box-content {
+  margin: 0;
+  position: relative;
+  z-index: 99;
+  margin-top: -300px;
+  display: flex;
+  flex-direction: column;
+}
+.promo .promo__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: none;
+}
+.promo .promo__description {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
+  }
+  .promo .promo__image--none {
+    display: none;
+  }
+  .promo .promo__title {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    text-transform: none;
+  }
+  .promo .promo__description {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .promo .promo__box-content {
+    margin: 0;
+    min-height: 750px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
+  }
+  .promo {
+    height: 694px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .promo .promo__image--block {
+    display: block;
+  }
+  .promo .promo__image {
+    width: 720px;
+    height: 694px;
+  }
+  .promo .promo__wrapper-color-image {
+    width: 720px;
+    height: 694px;
+  }
+  .promo .promo__image-product {
+    width: 552px;
+    height: 499px;
+    object-fit: cover;
+  }
+  .promo .promo__box-content {
+    margin: 0;
+    display: flex;
+    height: 694px;
+  }
+}
+.container-nutrition-programs {
+  margin: 0 auto;
+  width: 280px;
+  padding: 0 20px;
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+}
+.nutrition-programs .nutrition-programs__list-cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nutrition-programs .nutrition-programs__cards {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+.nutrition-programs .nutrition-programs__item {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+  width: 280px;
+  min-height: 266px;
+}
+.nutrition-programs .nutrition-programs__title-cards {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: none;
+}
+.nutrition-programs .nutrition-programs__description-cards {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  text-decoration: none;
+  text-transform: none;
+}
+.nutrition-programs .nutrition-programs__button-cards {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .container-nutrition-programs {
+    width: 708px;
+    padding: 0 30px;
+  }
+  .nutrition-programs .nutrition-programs__item {
+    min-width: 708px;
+    min-height: 372px;
+  }
+}
+@media (min-width: 1440px) {
+  .container-nutrition-programs {
+    width: 1220px;
+    padding: 0 110px;
+  }
+  .nutrition-programs .nutrition-programs__list-cards {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .nutrition-programs .nutrition-programs__item {
+    min-width: 570px;
+    min-height: 374px;
+  }
+}
+.container-about-products {
+  margin: 0 auto;
+  width: 280px;
+  padding: 0 20px;
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+}
+.about-products .about-products__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: none;
+}
+.about-products .about-products__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  text-decoration: none;
+  text-transform: none;
+}
+.about-products .about-products__list {
+  margin: 0;
+  list-style: none;
+}
+.about-products .about-products__item {
+  margin: 0;
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+}
+@media (min-width: 768px) {
+  .container-about-products {
+    width: 708px;
+    padding: 0 30px;
+  }
+  .about-products .about-products__item {
+    width: 230px;
+    height: 280px;
+  }
+  .about-products .about-products__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1440px) {
+  .container-about-products {
+    width: 1220px;
+    padding: 0 110px;
+  }
+  .about-products .about-products__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+.container-example-cat {
+  margin: 0 auto;
+  width: 280px;
+  padding: 0 20px;
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+  display: flex;
+  flex-direction: column;
+}
+.background-color-gray {
+  background-color: #f2f2f2;
+}
+.example-cat .example-cat__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: none;
+}
+.example-cat .example-cat__title-numbers {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.example-cat .example-cat__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  text-decoration: none;
+  text-transform: none;
+}
+.example-cat .example-cat__title-total {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.example-cat .example-cat__title-progress {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .container-example-cat {
+    width: 708px;
+    min-height: auto;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1440px) {
+  .container-example-cat {
+    width: 1220px;
+    padding: 0 110px;
+    flex-direction: row;
+  }
+}
+.container-contacts {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+  margin: 0 auto;
+  width: 280px;
+  padding: 0 20px;
+}
+.contacts .contacts__container {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts .contacts__map {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+}
+.contacts .contacts__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #111111;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.contacts .contacts__info {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  text-decoration: none;
+  text-transform: none;
+}
+@media (min-width: 768px) {
+  .container-contacts {
+    width: 708px;
+    min-height: auto;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1440px) {
+  .container-contacts {
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+}
+.container-footer {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.background-clor-gray {
+  background-color: #f2f2f2;
+}
+.main-footer .main-footer__list {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.main-footer .main-footer__logo-html-academy {
+  display: flex;
+  justify-content: space-between;
+}
+.main-footer .main-footer__logo-html-academy-text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  text-decoration: none;
+  text-transform: none;
+}
+@media (min-width: 768px) {
+  .container-footer {
+    width: 708px;
+    min-height: auto;
+    padding: 0 30px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1440px) {
+  .container-footer {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
+.catalog-products {
+  margin: 0 auto;
+}
+.catalog-products .catalog-products__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: none;
+}
+.catalog-products .catalog-products__sub-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.catalog-products .catalog-products__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #444444;
+  text-decoration: none;
+  text-transform: none;
+}
+.catalog-products .products-cards__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.catalog-products .products-cards__row {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #444444;
+  text-decoration: none;
+  text-transform: none;
+}
+.products-add .products-add__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.products-add .cards-add__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #222222;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.products-add .cards-add__row {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #444444;
+  text-decoration: none;
+  text-transform: none;
+}
+.gift {
+  margin: 0 auto;
+}
+.gift .gift__gift-container {
+  background-image: url("../image/catalog-images/catalog-images-jpg/gift-cat-image-.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+.gift .gift__wrapper-background-color {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+.gift .gift__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.contacts-form__container {
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+.filter-programs {
+  margin: 0 auto;
+}
+.filter-programs .filter-programs__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: none;
+}
+.filter-programs .filter-programs__sub-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.filter-programs .filter-programs__title-group {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.filter-programs .filter-programs__input-placeholder {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.filter-programs .filter-programs__title-input {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.filter-programs .filter-programs__message {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  text-transform: none;
+}
+.contacts-gray-block__container {
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+/*# sourceMappingURL=style.css.map */

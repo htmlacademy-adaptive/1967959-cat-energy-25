@@ -112,7 +112,6 @@ img {
     justify-content: space-between;
   }
   .main-header .main-nav {
-    width: 300px;
     display: flex;
   }
 }
@@ -145,7 +144,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
 }
-.container {
+.promo--container {
   margin: 0 auto;
   width: 280px;
   padding: 0 20px;
@@ -153,24 +152,28 @@ img {
   outline-offset: -3px;
 }
 .promo {
+  padding-top: 400px;
   position: relative;
 }
 .promo .promo__image {
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
   background-image: url("../image/index-images/index-jpg/index-promo-bg-cat.jpg");
   background-repeat: no-repeat;
   width: 320px;
   height: 302px;
   display: block;
-  margin: 0 auto;
 }
 .promo .promo__wrapper-color-image {
-  width: 320px;
+  margin: 0;
+  padding: 0;
   height: 302px;
   background-color: rgba(104, 183, 56, 0.85);
 }
 .promo .promo__box-content {
   margin: 0;
+  padding: 0;
   position: relative;
   z-index: 99;
   margin-top: -300px;
@@ -199,7 +202,7 @@ img {
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  .container {
+  .promo--container {
     width: 708px;
     padding: 0 30px;
     margin: 0 auto;
@@ -232,42 +235,59 @@ img {
   }
   .promo .promo__box-content {
     margin: 0;
+    padding: 0;
     min-height: 750px;
   }
 }
 @media (min-width: 1440px) {
-  .container {
+  .promo--container {
     width: 1220px;
     padding: 0 110px;
-    margin: 0 auto;
     outline: 3px solid #05c4f4;
     outline-offset: -3px;
   }
   .promo {
-    height: 694px;
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
+    min-height: 694px;
     display: flex;
-    flex-direction: row-reverse;
   }
   .promo .promo__image--block {
+    margin: 0;
+    padding: 0;
     display: block;
   }
   .promo .promo__image {
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
+    left: 50%;
+    background-size: 100%;
     width: 720px;
     height: 694px;
   }
   .promo .promo__wrapper-color-image {
+    background-size: 100%;
+    object-fit: cover;
     width: 720px;
     height: 694px;
   }
   .promo .promo__image-product {
+    margin: 0;
+    padding: 0;
     width: 552px;
     height: 499px;
     object-fit: cover;
   }
   .promo .promo__box-content {
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
     margin: 0;
+    padding: 0;
+    position: relative;
+    max-width: 500px;
     display: flex;
-    height: 694px;
+    min-height: 694px;
+    z-index: 99;
   }
 }
 .container-nutrition-programs {

@@ -1,18 +1,20 @@
-.container-example-cat {
-  margin: 0 auto;
-  width: 280px;
-  padding: 0 20px;
-  outline: 3px solid #05c4f4;
-  outline-offset: -3px;
-  display: flex;
-  flex-direction: column;
-}
-
 .background-color-gray {
   background-color: @background-block;
 }
 
 .example-cat {
+  margin: 0 auto;
+  width: 320px;
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+  display: flex;
+  flex-direction: column;
+
+  .example-cat__container {
+    width: 280px;
+    padding: 0 20px;
+  }
+
   .example-cat__title {
     .fz-h2();
   }
@@ -36,18 +38,36 @@
 
 
 @media (min-width: @tablet-width) {
-  .container-example-cat {
-    width: 708px;
-    min-height: auto;
-    padding: 0 30px;
+  .example-cat {
+    width: 768px;
     margin: 0 auto;
+
+    .example-cat__container {
+      width: 708px;
+      padding: 0 30px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .container-example-cat {
-    width: 1220px;
-    padding: 0 110px;
-    flex-direction: row;
+  .example-cat {
+    width: 1440px;
+    flex-direction: column;
+
+    .example-cat__container {
+      width: 1220px;
+      padding: 0 110px;
+      display: flex;
+
+      .example-cat__list {
+        width: 436px;
+        min-height: auto;
+      }
+
+      .example-cat__slider {
+        width: 591px;
+        min-height: auto;
+      }
+    }
   }
 }

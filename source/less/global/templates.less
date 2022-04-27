@@ -1,10 +1,21 @@
 .background-image-block() {
-  background-image: url("../image/index-images/index-jpg/index-promo-bg-cat.jpg");
-  background-color: @background-wrapper;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../image/index-images/index-jpg/index-promo-bg-cat.jpg"), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+  background-repeat: no-repeat;
 }
+
 
 .background-image-block-catalog() {
   background-image: url("../image/catalog-images/catalog-images-jpg/gift-cat-image-.jpg");
+  background-color: @background-wrapper;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.promo-image-product() {
+  background-image: url("../image/index-images/index-png/promo-broducts.png");
+  background-color: @background-wrapper;
+  background-repeat: no-repeat;
+  object-fit: cover;
 }
 
 .fz-menu (@size: 20px; @height: 20px; @weight: 500; @color: @color-title-1; @transform: uppercase) {

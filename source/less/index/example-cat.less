@@ -1,5 +1,19 @@
+.background-color-gray {
+  background-color: @background-block;
+}
+
 .example-cat {
-  background-color: #eaeaea;
+  margin: 0 auto;
+  width: 320px;
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+  display: flex;
+  flex-direction: column;
+
+  .example-cat__container {
+    width: 280px;
+    padding: 0 20px;
+  }
 
   .example-cat__title {
     .fz-h2();
@@ -19,5 +33,41 @@
 
   .example-cat__title-progress {
     .fz-h4();
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .example-cat {
+    width: 768px;
+    margin: 0 auto;
+
+    .example-cat__container {
+      width: 708px;
+      padding: 0 30px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example-cat {
+    width: 1440px;
+    flex-direction: column;
+
+    .example-cat__container {
+      width: 1220px;
+      padding: 0 110px;
+      display: flex;
+
+      .example-cat__list {
+        width: 436px;
+        min-height: auto;
+      }
+
+      .example-cat__slider {
+        width: 591px;
+        min-height: auto;
+      }
+    }
   }
 }

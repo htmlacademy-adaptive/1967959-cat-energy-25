@@ -1,22 +1,16 @@
-.container-contacts {
+
+.contacts {
   outline: 3px solid #05c4f4;
   outline-offset: -3px;
   margin: 0 auto;
-  width: 280px;
-  padding: 0 20px;
-}
+  width: 320px;
+  min-height: 112px;
 
-.contacts {
   .contacts__container {
     outline: 3px solid #05c4f4;
     outline-offset: -3px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .contacts__map {
-    outline: 3px solid #05c4f4;
-    outline-offset: -3px;
+    width: 280px;
+    padding: 0 20px;
   }
 
   .contacts__title {
@@ -29,19 +23,27 @@
 }
 
 @media (min-width: @tablet-width) {
-  .container-contacts {
-    width: 708px;
-    min-height: auto;
-    padding: 0 30px;
+  .contacts {
     margin: 0 auto;
+    width: 768px;
+    min-height: 199px;
+
+    .contacts__container {
+      width: 708px;
+      padding: 0 30px;
+    }
   }
 }
 
 
 @media (min-width: @desktop-width) {
-  .container-contacts {
-    width: 1220px;
-    padding: 0 110px;
+  .contacts {
+    width: 1440px;
     margin: 0 auto;
+
+    .contacts__container {
+      width: 1220px;
+      padding: 0 110px;
+    }
   }
 }

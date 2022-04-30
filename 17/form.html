@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/1967959-cat-energy-25/17/">
+</head>
+
+<body class="page__body">
+  <div class="page-container">
+    <header class="main-header">
+      <div class="main-header__container">
+        <div class="main-header__wrapper-logo">
+          <a class="main-header__logo" href="/">
+            <img src="image/index-images/index-svg/logo-mobile.svg" width="33.32" height="37.61">
+          </a>
+          <a class="main-header__logo-text" href="/">
+            <img src="image/index-images/index-svg/logo-text.svg" width="101" height="18">
+          </a>
+        </div>
+
+
+        <nav class="main-nav main-nav--closed">
+          <div class="main-nav__wrapper">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--activ">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Каталог продкуции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <section class="filter-programs">
+        <form class="filter-programs__form-group" action="https://echo.htmlacademy.ru" method="get">
+          <h2 class="filter-programs__title">Подбор программы</h2>
+          <p class="filter-programs__sub-title">Заполните анкету, и мы подберем
+            программу питания для вашего кота</p>
+
+          <div class="filter-programs__container-form">
+            <fieldset class="filter-programs__form form-cat">
+              <legend class="visually-hidden">Данные кота</legend>
+
+              <label for="name-cat" class="filter-programs__title-input">Имя</label>
+              <input class="filter-programs__input" type="text" id="name-cat" name="name-cat" placeholder="Барсик"
+                required>
+
+              <label for="weight-cat" class="filter-programs__title-input">Вес(кг)</label>
+              <input class="filter-programs__input" type="text" name="weight-cat" id="weight-cat" placeholder="7"
+                required>
+
+              <label for="age-cat" class="filter-programs__title-input">Возраст(лет)</label>
+              <input class="filter-programs__input" type="text" id="age-cat" name="age-cat" placeholder="7">
+            </fieldset>
+
+            <fieldset class="filter-programs__form form-food">
+              <legend class="filter-programs__title-form visually-hidden">Выбор программы питания</legend>
+              <label class="filter-programs__title-input" for="fit">Похудение</label>
+              <input class="filter-programs__input" type="radio" name="fit" id="fit" checked>
+
+              <label class="filter-programs__title-input" for="fat">Набор массы</label>
+              <input class="filter-programs__input" type="radio" name="fat" id="fat">
+
+              <label class="filter-programs__title-input" for="help">Не знаю (нужен ваш совет)</label>
+              <input class="filter-programs__input" type="radio" name="help" id="help" value="help">
+            </fieldset>
+          </div>
+
+
+
+          <fieldset class="filter-programs__form form-user">
+            <legend class="filter-programs__title-form">Контактные данные (владельца кота)</legend>
+            <label class="filter-programs__title-input" for="email">E-mail</label>
+            <input class="filter-programs__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com"
+              required>
+
+            <label class="filter-programs__title-input" for="telefon">Телефон</label>
+            <input class="filter-programs__input" type="tel" name="telefon" id="telefon" placeholder="8 (960) 900-60-90"
+              required>
+          </fieldset>
+
+          <fieldset class="filter-programs__form form-comments">
+            <legeng class="filter-programs__title-form">Комментарий</legeng>
+            <textarea class="filter-programs__input-placeholder" name="comment"
+              placeholder="Расскажите обо всех повАдках кота" id="comment" cols="30" rows="10"></textarea>
+          </fieldset>
+
+
+
+          <fieldset class="filter-programs__form form-parametr">
+            <legend class="filter-programs__title-form">Дополнительно</legend>
+            <label class="filter-programs__title-input" for="sugarless">Сахарозаменитель</label>
+            <input class="filter-programs__input" type="checkbox" id="sugarless" name="sugarless" value="sugarless"
+              checked>
+
+            <label class="filter-programs__title-input" for="aqua">Питьевая вода</label>
+            <input class="filter-programs__input" type="checkbox" id="aqua" name="aqua" value="aqua">
+
+            <label class="filter-programs__title-input" for="milk">Молоко</label>
+            <input class="filter-programs__input" type="checkbox" id="milk" name="milk" value="sugarless">
+
+            <label class="filter-programs__title-input" for="vitamins">Витамины</label>
+            <input class="filter-programs__input" type="checkbox" id="vitamins" name="vitamins" value="vitamins">
+          </fieldset>
+
+          <button class="filter-programs__button button button--green" type="submit">Отправить заявку</button>
+          <span class="filter-programs__message">* — Обязательные поля</span>
+
+        </form>
+      </section>
+
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__container">
+          <h4 class="contacts__title">приглашаем к сотрудничеству дилеров!</h4>
+          <address class="contacts__address">
+            <p class="contacts__info">ул. Большая
+              Конюшенная, д. 19/8
+              Санкт-Петербург</p>
+          </address>
+        </div>
+      </section>
+
+      <section class="location">
+        <div class="location__container">
+          <div class="location__container-content">
+            <div class="location__logo">
+              <a class="location__link" href="#">
+                <img location__image src="image/index-images/index-png/location-pin.png" width="33.32" height="37.61">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    </main>
+
+
+    <div class="background-clor-gray">
+      <footer class="main-footer container-footer">
+        <a class="main-footer__logo-text " href="/">
+          <img src="image/index-images/index-svg/logo-text.svg" width="101" height="18">
+        </a>
+        <ul class="main-footer__list">
+          <li class="main-footer__item main-footer__item--vk">
+            <a class="main-footer__link" href="#">
+              <img class="main-footer__icon-link" src="image/index-images/index-svg/vkontakte.svg" width="28"
+                height="22" alt="Ссылка vk.">
+            </a>
+          </li>
+          <li class="main-footer__item main-footer__item--youtube">
+            <a class="main-footer__link" href="https://www.youtube.com/user/htmlacademyru">
+              <img class="main-footer__icon-link" src="image/index-images/index-svg/youtube.svg" width="28" height="22"
+                alt="Ссылка youtube.">
+            </a>
+          </li>
+          <li class="main-footer__item main-footer__item--telegram">
+            <a class="main-footer__link" href="https://t.me/htmlacademy">
+              <img class="main-footer__icon-link" src="image/index-images/index-svg/telegram.svg" width="28" height="22"
+                alt="Ссылка telegram.">
+            </a>
+          </li>
+        </ul>
+        <a class="main-footer__logo-html-academy" href="https://htmlacademy.ru/study">
+          <p class="main-footer__logo-html-academy-text">HTML Academy</p>
+          <img src="image/index-images/index-svg/logo-html-academy.svg" width="27" height="34"
+            alt="Ссылка логотип html-academy.">
+        </a>
+      </footer>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>

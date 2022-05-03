@@ -1,27 +1,129 @@
+.form-cat {
+  min-height: 160px;
+}
+
+.form-food {
+  min-height: 120px;
+}
+
+.form-user {
+  min-height: 105px;
+}
+
+.form-comments {
+  min-height: 105px;
+}
+
+.form-parametr {
+  min-height: 180px;
+}
+
 .filter-programs {
+  width: 320px;
   margin: 0 auto;
 
-  .filter-programs__title {
-    .fz-h2();
+  .filter-programs__form-group {
+    width: 280px;
+    margin: 0 20px;
+
+    .filter-programs__form {
+      margin: 0;
+      padding: 0;
+    }
+
+    .filter-programs__title {
+      .fz-h2();
+    }
+
+    .filter-programs__sub-title {
+      .fz-h5();
+    }
+
+    .filter-programs__title-form {
+      .fz-h3(@height: 26px);
+    }
+
+    .filter-programs__input-placeholder {
+      .fz-h4();
+    }
+
+    .filter-programs__title-input {
+      .fz-h5();
+    }
+
+    .filter-programs__message {
+      .fz-content(@height: 16px; @color: @color-content-1);
+    }
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .form-cat {
+    width: 630px;
   }
 
-  .filter-programs__sub-title {
-    .fz-h5();
+  .form-food {
+    width: 630px;
   }
 
-  .filter-programs__title-group {
-    .fz-h3(@height:26px);
+  .form-user {
+    width: 630px;
   }
 
-  .filter-programs__input-placeholder {
-    .fz-h4();
+  .form-comments {
+    width: 630px;
   }
 
-  .filter-programs__title-input {
-    .fz-h5();
+  .form-parametr {
+    width: 630px;
   }
 
-  .filter-programs__message {
-    .fz-content(@height:16px; @color: @color-content-1);
+  .filter-programs {
+    width: 768px;
+    margin: 0 auto;
+
+    .filter-programs__form-group {
+      width: 708px;
+      margin: 0 30px;
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .form-cat {
+    width: 1200px;
+  }
+
+  .form-food {
+    width: 1200px;
+  }
+
+  .form-user {
+    width: 1200px;
+  }
+
+  .form-comments {
+    width: 1200px;
+  }
+
+  .form-parametr {
+    width: 1200px;
+  }
+
+
+  .filter-programs {
+    width: 1440px;
+    margin: 0 auto;
+
+    .filter-programs__form-group {
+      width: 1220px;
+      margin: 0 110px;
+    }
+
+    .filter-programs__container-form {
+      display: flex;
+    }
   }
 }

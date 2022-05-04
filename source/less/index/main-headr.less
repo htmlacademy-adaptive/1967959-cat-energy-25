@@ -34,7 +34,7 @@
   .main-nav__wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 280px;
+    width: 280px;
   }
 
   .main-nav__list {
@@ -75,6 +75,23 @@
 
     .main-nav {
       display: flex;
+
+      .main-nav__wrapper {
+        min-width: 440px;
+      }
+
+      .main-nav__list {
+        min-height: 80px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .main-nav__link {
+        .fz-menu(@size: 18px; @height: 24px);
+      }
     }
   }
 }
@@ -90,14 +107,20 @@
       justify-content: space-between;
     }
 
-    .main-header__wrapper-logo {
-      width: 202px;
-      min-height: 59px;
-    }
+    .main-nav {
+      .main-header__wrapper-logo {
+        width: 202px;
+        min-height: 59px;
+      }
 
-    .main-nav__wrapper {
-      min-width: 478px;
-      min-height: 40px;
+      .main-nav__wrapper {
+        min-width: 478px;
+        min-height: 40px;
+      }
+
+      .main-nav__link {
+        .fz-menu(@size: 20px; @height: 29px);
+      }
     }
   }
 }

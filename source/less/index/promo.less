@@ -6,20 +6,33 @@
   outline-offset: -3px;
   min-height: 480px;
   background-size: 320px 302px;
+  margin-bottom: 20px;
 
   .promo__box-content {
     margin: 0;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
-  }
 
-  .promo__title {
-    .fz-h1();
-  }
 
-  .promo__description {
-    .fz-h5(@color: @color-title-3);
+    .promo__title {
+      margin: 0;
+      padding: 25px 0;
+      .fz-h1();
+      text-align: center;
+    }
+
+    .promo__description {
+      margin: 0;
+      padding-bottom: 29px;
+      .fz-h5(@color: @color-title-3);
+      text-align: center;
+    }
+
+    .promo__button {
+      width: 280px;
+      padding: 10px 0;
+    }
   }
 }
 
@@ -30,22 +43,55 @@
 
   .promo {
     width: 768px;
+    min-height: 920px;
     margin: 0 auto;
     outline: 3px solid #05c4f4;
     outline-offset: -3px;
+    margin-top: 30px;
 
     .promo__box-content {
+      position: relative;
       margin: 0;
       padding: 0 30px;
       min-height: 750px;
-    }
 
-    .promo__title {
-      .fz-h1(@color: @color-title-1);
-    }
+      .promo__image-product--tablet {
+        position: absolute;
+        z-index: -1;
+        left: 50px;
+        top: 190px;
+        background-image: url("../../image/index-images/index-png/tablet-promo-broducts.png");
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+      }
 
-    .promo__description {
-      .fz-h5(@color: @color-title-1);
+      .promo__title {
+        margin: 0;
+        padding: 0;
+        width: 450px;
+        min-height: auto;
+        .fz-h1(@size: 60px; @height: 60px; @color: @color-title-1);
+        text-align: left;
+        margin-left: 81px;
+        padding-bottom: 41px;
+      }
+
+      .promo__description {
+        margin: 0;
+        padding: 0;
+        .fz-h5(@size: 20px;
+        @height: 20px; @color: @color-title-1);
+        text-align: left;
+        margin-left: 81px;
+        padding-bottom: 39px;
+      }
+
+      .promo__button {
+        width: 244px;
+        padding: 14px 0;
+        margin-left: 81px;
+      }
     }
   }
 }

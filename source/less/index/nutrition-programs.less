@@ -7,31 +7,67 @@
 }
 
 .nutrition-programs {
+  .nutrition-programs__wrapper-color {
+    margin-bottom: 23px;
+    background-color: @background-block;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   .nutrition-programs__list-cards {
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
-  .nutrition-programs__cards {
-    margin: 0;
-    padding: 0;
-    background-color: @background-block;
+  .nutrition-programs__item {
+    position: relative;
+    width: 227px;
+    min-height: auto;
+    margin: 0 auto;
+    padding: 30px  0 18px 0;
   }
 
-  .nutrition-programs__item {
-    outline: 3px solid #05c4f4;
-    outline-offset: -3px;
-    width: 280px;
-    min-height: 266px;
+  .nutrition-programs__item--cat-1::before {
+    content: "";
+    background-image: url("../../image/index-images/index-svg/cat_back.svg");
+    background-repeat: no-repeat;
+    padding-right: 80px;
+    width: 50px;
+    height: 53px;
+    position: absolute;
+    left: 0;
+    top: 21px;
+  }
+
+  .nutrition-programs__item--cat-2::before {
+    content: "";
+    background-image: url("../../image/index-images/index-svg/cat_back-2.svg");
+    background-repeat: no-repeat;
+    padding-right: 80px;
+    width: 50px;
+    height: 53px;
+    position: absolute;
+    left: -10px;
+    top: 24px;
   }
 
   .nutrition-programs__title-cards {
-    .fz-h2();
+    margin: 0;
+    padding: 0;
+    .fz-h3(@transform: uppercase);
+    text-align: left;
+    margin-left: 71px;
   }
 
   .nutrition-programs__description-cards {
     .fz-content();
+    width: 227px;
+    min-height: 90px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #d9d9d9;
   }
 
   .nutrition-programs__button-cards {

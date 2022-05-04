@@ -1,0 +1,1322 @@
+@font-face {
+  src: url("../../fonts/oswaldregular.woff2") format("woff2");
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  src: url("../../fonts/oswaldmedium.woff2") format("woff2");
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.button {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  width: min-content;
+  height: min-content;
+  background-color: #68b738;
+}
+.button--green {
+  background-color: #68b738;
+  color: #ffffff;
+}
+.button--gray {
+  background-color: #f2f2f2;
+  color: #444444;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.page {
+  height: 100%;
+}
+.page__body {
+  min-height: 100%;
+  margin: 0 auto;
+}
+.main-header {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+  margin: 0 auto;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+.main-header .main-header__container {
+  width: 280px;
+  padding: 0 20px;
+}
+.main-header .main-header__wrapper-logo {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+  display: flex;
+  align-items: center;
+  max-width: 280px;
+  min-height: 38px;
+}
+.main-header .main-header__logo {
+  width: 33.32px;
+  height: 37.61;
+}
+.main-header .main-header__logo-text {
+  width: 101px;
+  height: 18px;
+}
+.main-header .main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+.main-header .main-nav__list {
+  margin: 0;
+  list-style: none;
+}
+.main-header .main-nav__toggle {
+  display: none;
+}
+@media (min-width: 768px) {
+  .main-header {
+    width: 768px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-header .main-header__container {
+    display: flex;
+    justify-content: space-between;
+    width: 708px;
+    padding: 0 30px;
+  }
+  .main-header .main-nav__toggle {
+    display: none;
+  }
+  .main-header .main-header__nav-wrapper {
+    width: 708px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-header .main-header__wrapper-logo {
+    min-width: 174px;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-header .main-nav {
+    display: flex;
+  }
+  .main-header .main-nav .main-nav__wrapper {
+    min-width: 440px;
+  }
+  .main-header .main-nav .main-nav__list {
+    min-height: 80px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-header .main-nav .main-nav__link {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 1440px) {
+  .main-header {
+    width: 1440px;
+  }
+  .main-header .main-header__container--relative {
+    position: relative;
+    width: 1220px;
+    padding: 0 110px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-header .main-header__nav-wrapper--absolut {
+    display: flex;
+    width: 1220px;
+    justify-content: space-between;
+    position: absolute;
+    left: 110px;
+    top: 0;
+  }
+  .main-header .main-nav .main-header__wrapper-logo {
+    width: 202px;
+    min-height: 59px;
+  }
+  .main-header .main-nav .main-nav__wrapper {
+    min-width: 478px;
+    min-height: 40px;
+  }
+  .main-header .main-nav .main-nav__link {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+.main-nav {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+}
+.main-nav .main-nav__link {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.promo {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../image/index-images/index-jpg/index-promo-bg-cat.jpg");
+  background-repeat: no-repeat;
+  width: 320px;
+  margin: 0 auto;
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+  min-height: 480px;
+  background-size: 320px 302px;
+  margin-bottom: 20px;
+}
+.promo .promo__box-content {
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.promo .promo__box-content .promo__image-product {
+  background-image: url("../image/index-images/index-png/promo-broducts.png");
+  width: 280px;
+  height: 270px;
+  background-repeat: no-repeat;
+}
+.promo .promo__box-content .promo__title {
+  margin: 0;
+  padding: 25px 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: none;
+  text-align: center;
+}
+.promo .promo__box-content .promo__description {
+  margin: 0;
+  padding-bottom: 29px;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+.promo .promo__box-content .promo__button {
+  width: 280px;
+  padding: 10px 0;
+}
+@media (min-width: 768px) {
+  .promo--background-none {
+    background-image: none;
+  }
+  .promo {
+    width: 768px;
+    min-height: 810px;
+    margin: 0 auto;
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
+    margin-top: 30px;
+    z-index: -1;
+  }
+  .promo .promo__box-content {
+    position: relative;
+    margin: 0;
+    padding: 0 30px;
+    min-height: 750px;
+  }
+  .promo .promo__box-content .promo__image-product--tablet {
+    position: absolute;
+    z-index: -1;
+    left: 80px;
+    top: 190px;
+    background-image: url("../image/index-images/index-png/tablet-promo-products.png");
+    width: 709px;
+    height: 609px;
+    background-repeat: no-repeat;
+  }
+  .promo .promo__box-content .promo__title {
+    margin: 0;
+    padding: 0;
+    width: 450px;
+    min-height: auto;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    text-transform: none;
+    text-align: left;
+    margin-left: 81px;
+    padding-bottom: 41px;
+  }
+  .promo .promo__box-content .promo__description {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 81px;
+    padding-bottom: 39px;
+  }
+  .promo .promo__box-content .promo__button {
+    width: 244px;
+    padding: 14px 0;
+    margin-left: 81px;
+  }
+}
+@media (min-width: 1440px) {
+  .promo {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
+    min-height: 694px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .promo::before {
+    content: "";
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../image/index-images/index-jpg/desktop-index-promo-bg-cat.jpg");
+    width: 100%;
+  }
+  .promo .promo__box-content {
+    margin: 0;
+    padding: 0 110px;
+    max-width: 500px;
+    display: flex;
+    min-height: 694px;
+    z-index: 90;
+  }
+  .promo .promo__box-content .promo__title {
+    margin-top: 150px;
+  }
+  .promo .promo__box-content .promo__image-product--desktop {
+    position: absolute;
+    background-image: url("../image/index-images/index-png/desktop-promo-broducts.png");
+    width: 552px;
+    height: 499px;
+    background-repeat: no-repeat;
+    left: 560px;
+    top: 150px;
+    border: none;
+  }
+}
+.container-nutrition-programs {
+  margin: 0 auto;
+  width: 280px;
+  padding: 0 20px;
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+}
+.nutrition-programs .nutrition-programs__wrapper-color {
+  margin-bottom: 23px;
+  background-color: #f2f2f2;
+}
+.nutrition-programs .nutrition-programs__wrapper-color:last-child {
+  margin-bottom: 0;
+}
+.nutrition-programs .nutrition-programs__list-cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nutrition-programs .nutrition-programs__item {
+  position: relative;
+  width: 227px;
+  min-height: auto;
+  margin: 0 auto;
+  padding: 30px 0 18px 0;
+}
+.nutrition-programs .nutrition-programs__item--cat-1::before {
+  content: "";
+  background-image: url("../../image/index-images/index-svg/cat_back.svg");
+  background-repeat: no-repeat;
+  padding-right: 80px;
+  width: 50px;
+  height: 53px;
+  position: absolute;
+  left: 0;
+  top: 21px;
+}
+.nutrition-programs .nutrition-programs__item--cat-2::before {
+  content: "";
+  background-image: url("../../image/index-images/index-svg/cat_back-2.svg");
+  background-repeat: no-repeat;
+  padding-right: 80px;
+  width: 50px;
+  height: 53px;
+  position: absolute;
+  left: -10px;
+  top: 24px;
+}
+.nutrition-programs .nutrition-programs__title-cards {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 71px;
+}
+.nutrition-programs .nutrition-programs__description-cards {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  text-decoration: none;
+  text-transform: none;
+  width: 227px;
+  min-height: 90px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.nutrition-programs .nutrition-programs__button-cards {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nutrition-programs .nutrition-programs__button-cards .nutrition-programs__button-cards-text {
+  margin-right: 17px;
+}
+@media (min-width: 768px) {
+  .container-nutrition-programs {
+    width: 708px;
+    padding: 0 30px;
+  }
+  .nutrition-programs .nutrition-programs__item {
+    box-sizing: border-box;
+    min-width: 708px;
+    padding: 77px 52px 53px 52px;
+  }
+  .nutrition-programs .nutrition-programs__item .nutrition-programs__cards {
+    margin: 0;
+    padding: 0;
+    width: 594px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nutrition-programs .nutrition-programs__item .nutrition-programs__cards .nutrition-programs__title-cards {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+  .nutrition-programs .nutrition-programs__item .nutrition-programs__cards .nutrition-programs__description-cards {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #444444;
+    text-decoration: none;
+    text-transform: none;
+    width: 340px;
+    border-bottom: none;
+  }
+  .nutrition-programs .nutrition-programs__item .nutrition-programs__cards .nutrition-programs__button-cards {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .nutrition-programs .nutrition-programs__item .nutrition-programs__cards .nutrition-programs__button-cards .nutrition-programs__button-cards-text {
+    margin-right: 25px;
+  }
+  .nutrition-programs .nutrition-programs__item--tablet-cat-1::before {
+    content: "";
+    display: block;
+    background-image: url("../../image/index-images/index-svg/tablet-cat_back.svg");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 211px;
+    left: 448px;
+    top: 40px;
+  }
+  .nutrition-programs .nutrition-programs__item--tablet-cat-2::before {
+    content: "";
+    display: block;
+    background-image: url("../../image/index-images/index-svg/tablet-cat_back-2.svg");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 211px;
+    left: 412px;
+    top: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .container-nutrition-programs {
+    width: 1220px;
+    padding: 0 110px;
+  }
+  .nutrition-programs .nutrition-programs__list-cards {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .nutrition-programs .nutrition-programs__list-cards .nutrition-programs__wrapper-color {
+    margin: 0;
+    padding: 0;
+    width: 570px;
+    min-height: 372px;
+  }
+  .nutrition-programs .nutrition-programs__list-cards .nutrition-programs__wrapper-color .nutrition-programs__item {
+    width: 570px;
+    min-height: 372px;
+  }
+  .nutrition-programs .nutrition-programs__list-cards .nutrition-programs__wrapper-color .nutrition-programs__item .nutrition-programs__title-cards {
+    margin-left: 162px;
+    margin-bottom: 63px;
+  }
+  .nutrition-programs .nutrition-programs__list-cards .nutrition-programs__wrapper-color .nutrition-programs__item .nutrition-programs__description-cards {
+    margin: 0;
+    padding-bottom: 23px;
+  }
+  .nutrition-programs .nutrition-programs__list-cards .nutrition-programs__wrapper-color .nutrition-programs__item .nutrition-programs__button-cards {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .nutrition-programs .nutrition-programs__list-cards .nutrition-programs__wrapper-color .nutrition-programs__item .nutrition-programs__button-cards .nutrition-programs__button-cards-text {
+    margin-right: 28px;
+  }
+  .nutrition-programs .nutrition-programs__item--desktop-cat-1::before {
+    content: "";
+    display: block;
+    background-image: url("../../image/index-images/index-svg/desktop-cat_back.svg");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 211px;
+    left: 52px;
+    top: 40px;
+  }
+  .nutrition-programs .nutrition-programs__item--desktop-cat-2::before {
+    content: "";
+    display: block;
+    background-image: url("../../image/index-images/index-svg/desktop-cat_back-2.svg");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 211px;
+    left: 33px;
+    top: 40px;
+  }
+}
+.about-products {
+  margin: 0 auto;
+  width: 320px;
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+}
+.about-products .about-products-container {
+  width: 280px;
+  margin: 0;
+  padding: 0 20px;
+}
+.about-products .about-products__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: none;
+}
+.about-products .about-products__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  text-decoration: none;
+  text-transform: none;
+}
+.about-products .about-products__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.about-products .about-products__item {
+  margin: 0;
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+}
+@media (min-width: 768px) {
+  .about-products {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .about-products .about-products-container {
+    width: 708px;
+    padding: 0 30px;
+  }
+  .about-products .about-products__item {
+    width: 230px;
+    height: 280px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+  }
+  .about-products .about-products__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1440px) {
+  .about-products {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  .about-products .about-products-container {
+    width: 1220px;
+    padding: 0 110px;
+  }
+  .about-products .about-products__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+.background-color-gray {
+  background-color: #f2f2f2;
+}
+.example-cat {
+  margin: 0 auto;
+  width: 320px;
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+  display: flex;
+  flex-direction: column;
+}
+.example-cat .example-cat__container {
+  width: 280px;
+  padding: 0 20px;
+}
+.example-cat .example-cat__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: none;
+}
+.example-cat .example-cat__title-numbers {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.example-cat .example-cat__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  text-decoration: none;
+  text-transform: none;
+}
+.example-cat .example-cat__title-total {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.example-cat .example-cat__title-progress {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .example-cat {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .example-cat .example-cat__container {
+    width: 708px;
+    padding: 0 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .example-cat {
+    width: 1440px;
+    flex-direction: column;
+  }
+  .example-cat .example-cat__container {
+    width: 1220px;
+    padding: 0 110px;
+    display: flex;
+  }
+  .example-cat .example-cat__container .example-cat__list {
+    width: 436px;
+    min-height: auto;
+  }
+  .example-cat .example-cat__container .example-cat__slider {
+    width: 591px;
+    min-height: auto;
+  }
+}
+.contacts {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+  margin: 0 auto;
+  width: 320px;
+  min-height: 112px;
+}
+.contacts .contacts__container {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+  width: 280px;
+  padding: 0 20px;
+}
+.contacts .contacts__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #111111;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.contacts .contacts__info {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  text-decoration: none;
+  text-transform: none;
+}
+@media (min-width: 768px) {
+  .contacts {
+    margin: 0 auto;
+    width: 768px;
+    min-height: 199px;
+  }
+  .contacts .contacts__container {
+    width: 708px;
+    padding: 0 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .contacts {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  .contacts .contacts__container {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
+.location {
+  background: url("../image/index-images/index-png/map.jpg");
+  min-height: 362px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.location .location__container {
+  width: 320px;
+  margin: 0 auto;
+}
+.location .location__container .location__container-content {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+  width: 280px;
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .location__container {
+    margin: 0 auto;
+    width: 768px;
+    min-height: 400px;
+  }
+  .location__container .location__container-content {
+    width: 708px;
+    padding: 0 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .location__container {
+    margin: 0 auto;
+    width: 1440px;
+    min-height: 400px;
+  }
+  .location__container .location__container-content {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
+.container-footer {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.background-clor-gray {
+  background-color: #f2f2f2;
+}
+.main-footer .main-footer__list {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.main-footer .main-footer__logo-html-academy {
+  display: flex;
+  justify-content: space-between;
+}
+.main-footer .main-footer__logo-html-academy-text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  text-decoration: none;
+  text-transform: none;
+}
+@media (min-width: 768px) {
+  .container-footer {
+    width: 708px;
+    min-height: auto;
+    padding: 0 30px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1440px) {
+  .container-footer {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
+.catalog-products {
+  width: 320px;
+  margin: 0 auto;
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+}
+.catalog-products .catalog-products__container {
+  width: 280px;
+  padding: 0 20px;
+}
+.catalog-products .catalog-products__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: none;
+}
+.catalog-products .catalog-products__sub-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.catalog-products .catalog-products__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #444444;
+  text-decoration: none;
+  text-transform: none;
+}
+.catalog-products .catalog-products__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.catalog-products .products-card {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+}
+.catalog-products .products-card .products-card__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.catalog-products .products-card .products-card__row {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #444444;
+  text-decoration: none;
+  text-transform: none;
+}
+.catalog-products .products-card .products-card__sub-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.catalog-products .products-card .products-card__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #444444;
+  text-decoration: none;
+  text-transform: none;
+}
+@media (min-width: 768px) {
+  .catalog-products {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .catalog-products .catalog-products__container {
+    width: 708px;
+    padding: 0 30px;
+  }
+  .catalog-products .catalog-products__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 60px;
+  }
+  .catalog-products .products-card {
+    width: 324px;
+    min-height: 511px;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog-products {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  .catalog-products .catalog-products__container {
+    width: 1220px;
+    padding: 0 110px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .catalog-products .catalog-products__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 63px;
+  }
+  .catalog-products .products-card {
+    width: 245px;
+    min-height: 511px;
+  }
+}
+.add-products {
+  width: 320px;
+  margin: 0 auto;
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+}
+.add-products .add-products__container {
+  width: 280px;
+  padding: 0 20px;
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+}
+.add-products .add-products__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.add-products .add-products__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.add-products .add-products__item {
+  outline: 3px solid #05c4f4;
+  outline-offset: -3px;
+}
+.add-products .card-add__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #222222;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.add-products .card-add__row {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #444444;
+  text-decoration: none;
+  text-transform: none;
+}
+.add-products .add-products__gift-box-content {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../image/catalog-images/catalog-images-jpg/gift-cat-image-.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 280px;
+  min-height: 289px;
+}
+.add-products .add-products__gift-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .add-products {
+    width: 768px;
+    margin: 0 auto;
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
+  }
+  .add-products .add-products__container {
+    width: 708px;
+    padding: 0 30px;
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
+  }
+  .add-products .add-products__gift-box-content {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../image/catalog-images/catalog-images-jpg/gift-cat-image-.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 708px;
+    min-height: 200px;
+  }
+}
+@media (min-width: 1440px) {
+  .add-products {
+    width: 1440px;
+    margin: 0 auto;
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
+  }
+  .add-products .add-products__container {
+    width: 1220px;
+    padding: 0 110px;
+    outline: 3px solid #05c4f4;
+    outline-offset: -3px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .add-products .add-products__gift-box-content {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../image/catalog-images/catalog-images-jpg/gift-cat-image-.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 245px;
+    min-height: 289px;
+  }
+}
+.contacts-form__container {
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+.form-cat {
+  min-height: 160px;
+}
+.form-food {
+  min-height: 120px;
+}
+.form-user {
+  min-height: 105px;
+}
+.form-comments {
+  min-height: 105px;
+}
+.form-parametr {
+  min-height: 180px;
+}
+.filter-programs {
+  width: 320px;
+  margin: 0 auto;
+}
+.filter-programs .filter-programs__form-group {
+  width: 280px;
+  margin: 0 20px;
+}
+.filter-programs .filter-programs__form-group .filter-programs__form {
+  margin: 0;
+  padding: 0;
+}
+.filter-programs .filter-programs__form-group .filter-programs__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: none;
+}
+.filter-programs .filter-programs__form-group .filter-programs__sub-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.filter-programs .filter-programs__form-group .filter-programs__title-form {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.filter-programs .filter-programs__form-group .filter-programs__input-placeholder {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.filter-programs .filter-programs__form-group .filter-programs__title-input {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.filter-programs .filter-programs__form-group .filter-programs__message {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  text-transform: none;
+}
+@media (min-width: 768px) {
+  .form-cat {
+    width: 630px;
+  }
+  .form-food {
+    width: 630px;
+  }
+  .form-user {
+    width: 630px;
+  }
+  .form-comments {
+    width: 630px;
+  }
+  .form-parametr {
+    width: 630px;
+  }
+  .filter-programs {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .filter-programs .filter-programs__form-group {
+    width: 708px;
+    margin: 0 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .form-cat {
+    width: 1200px;
+  }
+  .form-food {
+    width: 1200px;
+  }
+  .form-user {
+    width: 1200px;
+  }
+  .form-comments {
+    width: 1200px;
+  }
+  .form-parametr {
+    width: 1200px;
+  }
+  .filter-programs {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  .filter-programs .filter-programs__form-group {
+    width: 1220px;
+    margin: 0 110px;
+  }
+  .filter-programs .filter-programs__container-form {
+    display: flex;
+  }
+}
+.contacts-gray-block__container {
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+/*# sourceMappingURL=style.css.map */

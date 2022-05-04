@@ -14,6 +14,13 @@
     display: flex;
     flex-direction: column;
 
+    .promo__image-product {
+      background-image: url("../../image/index-images/index-png/promo-broducts.png");
+      width: 280px;
+      height: 270px;
+      background-repeat: no-repeat;
+    }
+
 
     .promo__title {
       margin: 0;
@@ -48,6 +55,7 @@
     outline: 3px solid #05c4f4;
     outline-offset: -3px;
     margin-top: 30px;
+    z-index: -1;
 
     .promo__box-content {
       position: relative;
@@ -58,11 +66,11 @@
       .promo__image-product--tablet {
         position: absolute;
         z-index: -1;
-        left: 50px;
+        left: 20px;
         top: 190px;
         background-image: url("../../image/index-images/index-png/tablet-promo-broducts.png");
-        width: 100%;
-        height: 100%;
+        width: 709px;
+        height: 609px;
         background-repeat: no-repeat;
       }
 
@@ -98,35 +106,44 @@
 
 
 @media (min-width: @desktop-width) {
-  .promo--background-on {
-    .background-image-block();
-  }
-
   .promo {
+    position: relative;
     width: 1440px;
     margin: 0 auto;
     outline: 3px solid #05c4f4;
     outline-offset: -3px;
     min-height: 694px;
     display: flex;
-    background-size: 720px 694px;
-    background-position: right;
+    flex-direction: row-reverse;
+
+    &::before {
+      content: "";
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../image/index-images/index-jpg/desktop-index-promo-bg-cat.jpg");
+      width: 100%;
+    }
 
     .promo__box-content {
       margin: 0;
       padding: 0 110px;
-      position: relative;
       max-width: 500px;
       display: flex;
       min-height: 694px;
-    }
+      z-index: 90;
 
-    .promo__image-product {
-      margin: 0;
-      padding: 0;
-      width: 552px;
-      height: 499px;
-      object-fit: cover;
+      .promo__title {
+        margin-top: 150px;
+      }
+
+      .promo__image-product--desktop {
+        position: absolute;
+        background-image: url("../../image/index-images/index-png/desktop-promo-broducts.png");
+        width: 552px;
+        height: 499px;
+        background-repeat: no-repeat;
+        left: 560px;
+        top: 150px;
+        border: none;
+      }
     }
   }
 }

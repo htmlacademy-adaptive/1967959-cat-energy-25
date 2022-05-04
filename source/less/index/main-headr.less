@@ -65,6 +65,12 @@
       display: none;
     }
 
+    .main-header__nav-wrapper {
+      width: 708px;
+      display: flex;
+      justify-content: space-between;
+    }
+
     .main-header__wrapper-logo {
       min-width: 174px;
       min-height: 52px;
@@ -100,11 +106,21 @@
   .main-header {
     width: 1440px;
 
-    .main-header__container {
+    .main-header__container--relative {
+      position: relative;
       width: 1220px;
       padding: 0 110px;
       display: flex;
       justify-content: space-between;
+    }
+
+    .main-header__nav-wrapper--absolut {
+      display: flex;
+      width: 1220px;
+      justify-content: space-between;
+      position: absolute;
+      left: 110px;
+      top: 0;
     }
 
     .main-nav {
@@ -119,7 +135,7 @@
       }
 
       .main-nav__link {
-        .fz-menu(@size: 20px; @height: 29px);
+        .fz-menu(@size: 20px; @height: 29px; @color: @color-content-3);
       }
     }
   }

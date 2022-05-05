@@ -25,9 +25,26 @@
   }
 
   .about-products__item {
-    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 278px;
+    margin-bottom: 24px;
     outline: 3px solid #05c4f4;
     outline-offset: -3px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .about-products__description {
+      width: 198px;
+    }
+
+    .about-products__image-item {
+      width: 60px;
+      height: 60px;
+    }
   }
 }
 
@@ -42,16 +59,54 @@
     }
 
     .about-products__item {
-      width: 230px;
+      position: relative;
+      padding-top: 40px;
+      padding-bottom: 57px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 246px;
       height: 280px;
       margin-right: 50px;
       margin-bottom: 30px;
+      box-sizing: border-box;
+      counter-increment: number;
+
+      &::before {
+        content: counter(number);
+        position: absolute;
+        width: 112px;
+        height: 280px;
+        left: 118px;
+        top: 0;
+        font-family: "Oswald", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
+        text-align: center;
+        color: #f2f2f2;
+        z-index: -1;
+      }
+
+      .about-products__image-item {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 31px;
+      }
+
+      .about-products__description {
+        margin: 0;
+        padding: 0;
+        width: 245px;
+      }
     }
 
     .about-products__list {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      counter-reset: number;
     }
   }
 }
@@ -69,6 +124,19 @@
     .about-products__list {
       display: flex;
       flex-wrap: nowrap;
+      justify-content: flex-start;
+      margin-right: 94px;
+
+      .about-products__item {
+        margin: 0;
+        width: 250px;
+        height: 280px;
+        margin-right: 80px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
   }
 }

@@ -1,6 +1,13 @@
+.promo-container {
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+  background-repeat: no-repeat;
+  background-size: 100% 302px;
+}
+
+
 .promo {
-  .background-image-block();
   width: 320px;
+  .background-image-block();
   margin: 0 auto;
   outline: 3px solid #05c4f4;
   outline-offset: -3px;
@@ -9,7 +16,7 @@
   margin-bottom: 20px;
 
   .promo__box-content {
-    margin: 0;
+    margin: 0 auto;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
@@ -44,6 +51,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .promo-container {
+    background: none;
+  }
+
   .promo--background-none {
     background-image: none;
   }

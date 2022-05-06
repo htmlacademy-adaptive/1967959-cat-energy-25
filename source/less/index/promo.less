@@ -1,7 +1,9 @@
-.promo-container {
+.promo-background-color {
+  width: 320px;
+  margin: 0 auto;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
   background-repeat: no-repeat;
-  background-size: 100% 302px;
+  background-size: 320px 302px;
 }
 
 
@@ -51,8 +53,10 @@
 }
 
 @media (min-width: @tablet-width) {
-  .promo-container {
+  .promo-background-color {
     background: none;
+    width: 768px;
+    margin: 0 auto;
   }
 
   .promo--background-none {
@@ -100,7 +104,7 @@
         margin: 0;
         padding: 0;
         .fz-h5(@size: 20px;
-        @height: 20px; @color: @color-title-1);
+          @height: 20px; @color: @color-title-1);
         text-align: left;
         margin-left: 81px;
         padding-bottom: 39px;
@@ -117,6 +121,11 @@
 
 
 @media (min-width: @desktop-width) {
+  .promo-background-color {
+    width: 1440px;
+    margin: 0 auto;
+  }
+
   .promo {
     position: relative;
     width: 1440px;
@@ -131,6 +140,7 @@
       content: "";
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../image/index-images/index-jpg/desktop-index-promo-bg-cat.jpg");
       width: 100%;
+      background-color: #68b738;
     }
 
     .promo__box-content {

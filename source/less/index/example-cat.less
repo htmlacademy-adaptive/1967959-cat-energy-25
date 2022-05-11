@@ -1,5 +1,5 @@
 .background-color-gray {
-  background-color: @background-block;
+  background: #eaeaea;
 }
 
 .example-cat {
@@ -17,18 +17,23 @@
 
   .example-cat__title {
     .fz-h2();
-  }
-
-  .example-cat__title-numbers {
-    .fz-h4();
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
   }
 
   .example-cat__description {
     .fz-content();
   }
 
+  .example-cat__title-numbers {
+    .fz-h4();
+  }
+
   .example-cat__title-total {
     .fz-h5();
+    text-align: center;
   }
 
   .example-cat__title-progress {
@@ -38,6 +43,10 @@
 
 
 @media (min-width: @tablet-width) {
+  .background-clor-gray {
+    background: linear-gradient(#ffffff 50%, #eaeaea 50%);
+  }
+
   .example-cat {
     width: 768px;
     margin: 0 auto;
@@ -70,4 +79,60 @@
       }
     }
   }
+}
+
+
+
+
+.background-color-gray {}
+
+.example-cat {
+
+  // .example-cat__container
+
+  &__container {}
+
+  // .example-cat__title
+
+  &__title {}
+
+  // .example-cat__description
+
+  &__description {}
+
+  // .example-cat__list
+
+  &__list {}
+
+  // .example-cat__item
+
+  &__item {}
+
+  // .example-cat__title-numbers
+
+  &__title-numbers {}
+
+  // .example-cat__title-total
+
+  &__title-total {}
+
+  // .example-cat__slider
+
+  &__slider {}
+
+  // .example-cat__image-cat
+
+  &__image-cat {}
+
+  // .example-cat__image-cat--toatal
+
+  &__image-cat--toatal {}
+
+  // .example-cat__title-progress
+
+  &__title-progress {}
+
+  // .example-cat__form-toggle
+
+  &__form-toggle {}
 }

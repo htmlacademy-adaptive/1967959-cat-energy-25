@@ -1,6 +1,4 @@
 .main-header {
-  outline: 3px solid #05c4f4;
-  outline-offset: -3px;
   margin: 0 auto;
   width: 320px;
   display: flex;
@@ -14,8 +12,6 @@
 
 
 .main-header__wrapper-logo {
-  outline: 3px solid #05c4f4;
-  outline-offset: -3px;
   display: flex;
   align-items: center;
   max-width: 280px;
@@ -52,6 +48,14 @@
   background: transparent;
 }
 
+.main-nav__item {
+  width: 280px;
+  text-align: center;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -87,7 +91,7 @@
     left: -20px;
     width: 320px;
     z-index: 100;
-    min-height: 42vh;
+    min-height: 30vh;
     background-color: #ffffff;
   }
 

@@ -7,7 +7,7 @@
 
 .main-header__container {
   width: 280px;
-  padding: 0 20px;
+  padding: 10px 20px 20px 20px;
 }
 
 
@@ -31,7 +31,6 @@
 .main-nav {
   position: relative;
   width: 280px;
-  min-height: 65px;
   display: flex;
   justify-content: center;
 }
@@ -39,7 +38,7 @@
 .main-nav__toggle {
   position: absolute;
   z-index: 2;
-  top: 0;
+  top: -40px;
   right: 0;
   width: 40px;
   height: 40px;
@@ -47,6 +46,7 @@
   border: none;
   background: transparent;
 }
+
 
 .main-nav__item {
   width: 280px;
@@ -87,7 +87,7 @@
 
   .main-nav--opened .main-nav__wrapper {
     position: absolute;
-    top: 0;
+    top: 20px;
     left: -20px;
     width: 320px;
     z-index: 100;
@@ -106,6 +106,7 @@
 
   .main-nav--nojs .main-nav__item {
     display: block;
+    padding: 22px 22px;
   }
 
   .main-nav--nojs .main-nav__item--activ a {
@@ -116,7 +117,7 @@
 
 .main-nav--opened .main-nav__toggle {
   z-index: 200;
-  top: 0;
+  top: -30px;
   right: 0;
 
   &::before,
@@ -149,7 +150,7 @@
   align-items: center;
 }
 
-.main-nav__item {
+.main-nav--opened .main-nav__item {
   padding: 22px 22px;
 }
 
@@ -187,6 +188,7 @@
     }
 
     .main-nav {
+      min-width: 440px;
       display: flex;
 
       .main-nav__wrapper {
@@ -194,12 +196,27 @@
       }
 
       .main-nav__list {
+        box-sizing: border-box;
         min-height: 80px;
+        min-width: 440px;
         margin: 0;
         padding: 0;
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
+      }
+
+      .main-nav__item {
+        display: inline-block;
+        margin: 0;
+        padding: 12px 0 10px 0;
+        width: auto;
+        border: none;
+      }
+
+      .main-nav__item--activ {
+        border-bottom: 2px solid #68b738;
       }
 
       .main-nav__link {
@@ -231,6 +248,8 @@
     }
 
     .main-nav {
+      min-width: 478px;
+
       .main-header__wrapper-logo {
         width: 202px;
         min-height: 59px;
@@ -240,6 +259,15 @@
         min-width: 478px;
         min-height: 40px;
       }
+
+      .main-nav__list {
+        min-width: 478px;
+      }
+
+      .main-nav__item--activ {
+        border-bottom: 2px solid #ffffff;
+      }
+
 
       .main-nav__link {
         .fz-menu(@size: 20px; @height: 29px; @color: @color-content-3; @weight: 400);

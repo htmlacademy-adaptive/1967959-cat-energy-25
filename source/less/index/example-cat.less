@@ -4,6 +4,8 @@
 
 .example-cat {
   margin: 0 auto;
+  padding: 25px 0 40px 0;
+  box-sizing: border-box;
   width: 320px;
   outline: 3px solid #05c4f4;
   outline-offset: -3px;
@@ -19,21 +21,65 @@
     .fz-h2();
     margin: 0;
     padding: 0;
+    margin-bottom: 40px;
     display: inline-block;
     text-align: left;
   }
 
   .example-cat__description {
     .fz-content();
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .example-cat__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .example-cat__item {
+    position: relative;
+    border: 1.5px solid #cdcdcd;
+    border-radius: 2px;
+    width: 124px;
+    height: 56px;
+    margin-bottom: 35px;
   }
 
   .example-cat__title-numbers {
-    .fz-h4();
+    .fz-h3(@height:24px);
+    padding-top: 14px;
+  }
+
+  .example-cat__description--absolute {
+    width: 77px;
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    left: 20px;
+    background: #eaeaea;
+    padding: 0 5px 0 5px;
   }
 
   .example-cat__title-total {
     .fz-h5();
+    margin: 0;
+    padding: 0;
+    padding-bottom: 40px;
     text-align: center;
+  }
+
+  .example-cat__slider-devace {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .example-cat__form-toggle {
+    width: 85px;
+    height: 14px;
   }
 
   .example-cat__title-progress {
@@ -43,7 +89,7 @@
 
 
 @media (min-width: @tablet-width) {
-  .background-clor-gray {
+  .background-color-gray {
     background: linear-gradient(#ffffff 50%, #eaeaea 50%);
   }
 
@@ -59,6 +105,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .background-color-gray {
+    background: linear-gradient(#ffffff 20%, #eaeaea 20%);
+  }
+
   .example-cat {
     width: 1440px;
     flex-direction: column;

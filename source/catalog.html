@@ -11,34 +11,38 @@
 <body class="page__body">
   <div class="page-container">
     <header class="main-header">
-      <div class="main-header__container">
-        <div class="main-header__wrapper-logo">
-          <a class="main-header__logo" href="index.html">
-            <img src="image/index-images/index-svg/logo-mobile.svg" width="33.32" height="37.61">
-          </a>
-          <a class="main-header__logo-text" href="/">
-            <img src="image/index-images/index-svg/logo-text.svg" width="101" height="18">
-          </a>
-        </div>
+      <div class="main-header__container main-header__container--relative">
+        <div class="main-header__nav-wrapper main-header__nav-wrapper--absolut">
+          <div class="main-header__wrapper-logo">
+            <a class="main-header__logo" href="index.html">
+              <img src="image/index-images/index-svg/logo-mobile.svg" width="33.32" height="37.61">
+            </a>
+            <a class="main-header__logo-text" href="index.html">
+              <img src="image/index-images/index-svg/logo-text.svg" width="101" height="18">
+            </a>
+          </div>
 
 
-        <nav class="main-nav main-nav--closed">
-          <div class="main-nav__wrapper">
+          <nav class="main-nav  main-nav--closed main-nav--nojs">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
             </button>
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--activ">
-                <a class="main-nav__link" href="index.html">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="catalog.html">Каталог продкуции</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--activ">
+                  <a class="main-nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="catalog.html">Каталог продкуции</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="form.html">Подбор программы</a>
+                </li>
+              </ul>
+            </div>
+
+          </nav>
+        </div>
+
       </div>
     </header>
 
@@ -273,10 +277,7 @@
             </li>
 
             <li class="catalog-products__item">
-              <article class="products-card">
-                <button class="products-card__button "><img class="products-card__button-image"
-                    src="image/catalog-images/catalog-images-svg/catalog-icon-button-plus.svg"
-                    alt="Кнопка показать ещё."></button>
+              <article class="products-card products-card--more ">
                 <h4 class="products-card__sub-title">Показать еще 100500 товаров</h4>
                 <p class="products-card__description">На самом деле вкусов гораздо больше!</p>
                 <a class="products-card__button button button--gray" href="#">Показать всё</a>
@@ -287,8 +288,8 @@
       </section>
 
       <section class="add-products">
-        <h3 class="add-products__title">Дополнительные товары</h3>
         <div class="add-products__container">
+          <h3 class="add-products__title">Дополнительные товары</h3>
           <ul class="add-products__list">
 
             <li class="add-products__item">
@@ -296,8 +297,8 @@
                 <h4 class="card-add__title">Сахарозаменитель</h4>
                 <table class="card-add__body">
                   <tr class="card-add__row">
-                    <td class="card-add__parameter">1 упаковка (100 г)</td>
-                    <td class="card-add__parameter">200р</td>
+                    <td class="card-add__parameter card-add__parameter--left">1 упаковка (100 г)</td>
+                    <td class="card-add__parameter card-add__parameter--right">200р</td>
                   </tr>
                 </table>
                 <a class="products-card-add__button button button--green" href="#">Заказать</a>
@@ -306,40 +307,40 @@
 
             <li class="add-products__item">
               <article class="card-add">
-                <h4 class="card-add__title">Питьевая вода</h4>
+                <h4 class="card-add__title">Сахарозаменитель</h4>
                 <table class="card-add__body">
                   <tr class="card-add__row">
-                    <td class="card-add__parameter">5 литров</td>
-                    <td class="card-add__parameter">50р</td>
+                    <td class="card-add__parameter card-add__parameter--left">1 упаковка (100 г)</td>
+                    <td class="card-add__parameter card-add__parameter--right">200р</td>
                   </tr>
                 </table>
-                <a class="card-add__button button button--green" href="#">Заказать</a>
+                <a class="products-card-add__button button button--green" href="#">Заказать</a>
               </article>
             </li>
 
             <li class="add-products__item">
               <article class="card-add">
-                <h4 class="card-add__title">Молок</h4>
+                <h4 class="card-add__title">Сахарозаменитель</h4>
                 <table class="card-add__body">
                   <tr class="card-add__row">
-                    <td class="card-add__parameter">1 литр (100 г)</td>
-                    <td class="card-add__parameter">100р</td>
+                    <td class="card-add__parameter card-add__parameter--left">1 упаковка (100 г)</td>
+                    <td class="card-add__parameter card-add__parameter--right">200р</td>
                   </tr>
                 </table>
-                <a class="card-add__button button button--green" href="#">Заказать</a>
+                <a class="products-card-add__button button button--green" href="#">Заказать</a>
               </article>
             </li>
 
             <li class="add-products__item">
               <article class="card-add">
-                <h4 class="card-add__title">Витамины</h4>
+                <h4 class="card-add__title">Сахарозаменитель</h4>
                 <table class="card-add__body">
                   <tr class="card-add__row">
-                    <td class="card-add__parameter">1 упаковка (30 г)</td>
-                    <td class="card-add__parameter">300р</td>
+                    <td class="card-add__parameter card-add__parameter--left">1 упаковка (100 г)</td>
+                    <td class="card-add__parameter card-add__parameter--right">200р</td>
                   </tr>
                 </table>
-                <a class="card-add__button button button--green" href="#">Заказать</a>
+                <a class="products-card-add__button button button--green" href="#">Заказать</a>
               </article>
             </li>
           </ul>
@@ -392,13 +393,13 @@
     <div class="background-clor-gray">
       <footer class="main-footer container-footer">
         <a class="main-footer__logo-text " href="/">
-          <img src="image/index-images/index-svg/logo-text.svg" width="101" height="18">
+          <img class="logo-text-image" src="image/index-images/index-svg/logo-text.svg" width="101" height="18">
         </a>
-        <ul class="main-footer__list">
+        <ul class="main-footer__list-social">
           <li class="main-footer__item main-footer__item--vk">
             <a class="main-footer__link" href="#">
-              <img class="main-footer__icon-link" src="image/index-images/index-svg/vkontakte.svg" width="28"
-                height="22" alt="Ссылка vk.">
+              <img class="main-footer__icon-link" src="image/index-images/index-svg/vkontakte.svg" width="28" height="22"
+                alt="Ссылка vk.">
             </a>
           </li>
           <li class="main-footer__item main-footer__item--youtube">
@@ -421,7 +422,9 @@
         </a>
       </footer>
     </div>
-    </di>
+
+    <script src="js/script.js"></script>
+  </div>
 </body>
 
 </html>

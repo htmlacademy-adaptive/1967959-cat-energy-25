@@ -11,34 +11,38 @@
 <body class="page__body">
   <div class="page-container">
     <header class="main-header">
-      <div class="main-header__container">
-        <div class="main-header__wrapper-logo">
-          <a class="main-header__logo" href="/">
-            <img src="image/index-images/index-svg/logo-mobile.svg" width="33.32" height="37.61">
-          </a>
-          <a class="main-header__logo-text" href="/">
-            <img src="image/index-images/index-svg/logo-text.svg" width="101" height="18">
-          </a>
-        </div>
+      <div class="main-header__container main-header__container--relative">
+        <div class="main-header__nav-wrapper main-header__nav-wrapper--absolut">
+          <div class="main-header__wrapper-logo">
+            <a class="main-header__logo" href="index.html">
+              <img src="image/index-images/index-svg/logo-mobile.svg" width="33.32" height="37.61">
+            </a>
+            <a class="main-header__logo-text" href="index.html">
+              <img src="image/index-images/index-svg/logo-text.svg" width="101" height="18">
+            </a>
+          </div>
 
 
-        <nav class="main-nav main-nav--closed">
-          <div class="main-nav__wrapper">
+          <nav class="main-nav  main-nav--closed main-nav--nojs">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
             </button>
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--activ">
-                <a class="main-nav__link" href="index.html">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="catalog.html">Каталог продкуции</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--activ">
+                  <a class="main-nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="catalog.html">Каталог продкуции</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="form.html">Подбор программы</a>
+                </li>
+              </ul>
+            </div>
+
+          </nav>
+        </div>
+
       </div>
     </header>
 
@@ -153,13 +157,13 @@
     <div class="background-clor-gray">
       <footer class="main-footer container-footer">
         <a class="main-footer__logo-text " href="/">
-          <img src="image/index-images/index-svg/logo-text.svg" width="101" height="18">
+          <img class="logo-text-image" src="image/index-images/index-svg/logo-text.svg" width="101" height="18">
         </a>
-        <ul class="main-footer__list">
+        <ul class="main-footer__list-social">
           <li class="main-footer__item main-footer__item--vk">
             <a class="main-footer__link" href="#">
-              <img class="main-footer__icon-link" src="image/index-images/index-svg/vkontakte.svg" width="28"
-                height="22" alt="Ссылка vk.">
+              <img class="main-footer__icon-link" src="image/index-images/index-svg/vkontakte.svg" width="28" height="22"
+                alt="Ссылка vk.">
             </a>
           </li>
           <li class="main-footer__item main-footer__item--youtube">
@@ -182,6 +186,8 @@
         </a>
       </footer>
     </div>
+
+    <script src="js/script.js"></script>
   </div>
 
 

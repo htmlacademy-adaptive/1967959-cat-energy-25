@@ -1,18 +1,17 @@
 .add-products {
   width: 320px;
   margin: 0 auto;
-  outline: 3px solid #05c4f4;
-  outline-offset: -3px;
 
   .add-products__container {
     width: 280px;
     padding: 0 20px;
-    outline: 3px solid #05c4f4;
-    outline-offset: -3px;
   }
 
   .add-products__title {
+    margin: 0;
+    padding-bottom: 20px;
     .fz-h3(@height: 24px);
+    border-bottom: 1px solid #ebebeb;
   }
 
   .add-products__list {
@@ -22,12 +21,32 @@
   }
 
   .add-products__item {
-    outline: 3px solid #05c4f4;
-    outline-offset: -3px;
+    margin-bottom: 10px;
   }
+
+  .card-add {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  .card-add__parameter--left {
+    text-align: left;
+  }
+
+  .card-add__parameter--right {
+    text-align: right;
+  }
+
 
   .card-add__title {
     .fz-h4(@color: @color-title-4);
+  }
+
+  .products-card-add__button {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    margin-bottom: 20px;
   }
 
   .card-add__row {
@@ -35,6 +54,10 @@
   }
 
   .add-products__gift-box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .background-image-block-catalog();
     width: 280px;
     min-height: 289px;
@@ -42,6 +65,7 @@
 
   .add-products__gift-title {
     .fz-h4(@color: @color-title-3);
+    text-align: center;
   }
 }
 

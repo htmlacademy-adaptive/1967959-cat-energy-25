@@ -33,6 +33,11 @@
   width: 280px;
   display: flex;
   justify-content: center;
+  z-index: 200;
+}
+
+.main-nav__link {
+  padding: 12px 0 10px 0;
 }
 
 .main-nav__toggle {
@@ -53,6 +58,7 @@
   text-align: center;
   border-top: 1px solid #eaeaea;
   border-bottom: 1px solid #eaeaea;
+  cursor: pointer;
 }
 
 
@@ -217,6 +223,7 @@
 
       .main-nav__item--activ {
         border-bottom: 2px solid #68b738;
+        box-sizing: border-box;
       }
 
       .main-nav__link {
